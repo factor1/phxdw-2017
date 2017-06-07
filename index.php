@@ -2,16 +2,27 @@
   /**
    * The default blog / index template.
    */
-  get_header();
+  get_header();?>
 
-  if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-    the_content();
-
-  endwhile;
-      the_posts_pagination( array('mid_size' => 2) );
-  else :
-    echo '<h2>Sorry, no posts have been found</h2>';
-  endif;
-
+	  <div class="row row--full-width">
+		  
+	
+		<div class="col-4 col-no-pad">  
+			<?php get_template_part('parts/fixedleft');?> 
+		</div> 
+	  
+	  
+	  
+	  
+	  <div id="panels" class="col-8 col-no-pad">
+		  <?php get_template_part('parts/intro');?> 
+	  </div>
+		  
+		  
+		  
+		  
+		  
+	  </div><!-- Closes row -->
+  <?php 
   get_footer();

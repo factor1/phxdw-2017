@@ -19,6 +19,11 @@
 // Mixins
 @import 'mixins/sugar';
 
+// Include Ginger
+@import 'settings';
+@import 'ginger';
+
+
 // Global Styles
 @import 'globals/global';
 @import 'globals/wordpress';
@@ -26,6 +31,8 @@
 
 // Components
 @import 'components/social-menu';
+@import 'components/leftside';
+@import 'components/panels';
 @import 'components/header';
 @import 'components/footer';
 

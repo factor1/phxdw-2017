@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/factor1/phxdw-2017#readme",
   "dependencies": {
+    "ginger-grid": "^2.0.3",
     "prelude-wp": "^3.5.1"
   }
 }
