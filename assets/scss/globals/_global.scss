@@ -29,6 +29,8 @@ body {
   overflow-y                 : scroll;
   /* has to be scroll, not auto */
   -webkit-overflow-scrolling : touch;
+  background: #222 url(../images/bg_dark.jpg) no-repeat fixed;
+  background-size: cover;
 }
 
 // Hide empty paragraphs

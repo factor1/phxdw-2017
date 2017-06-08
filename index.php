@@ -17,6 +17,7 @@
 	  
 	  <div id="panels" class="col-8 col-no-pad">
 		  <?php get_template_part('parts/intro');?> 
+		  <?php get_template_part('parts/tickets');?> 
 	  </div>
 		  
 		  

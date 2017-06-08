@@ -2,11 +2,15 @@
 	display: block;
 	height: 100vh;
 	padding: 20% 10%;
+	background-size: cover;
 }
 
 
 .panel--dark {
-	background: #333 url(../images/bg_dark.jpg) no-repeat;
-	background-size: cover;
+	background: #222 url(../images/bg_dark.jpg) no-repeat;
+}
+
+.panel--lime {
+	background: #9cce5b  url(../images/bg_lime.jpg) no-repeat;
 }
 

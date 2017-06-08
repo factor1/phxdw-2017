@@ -1,7 +1,7 @@
-<section class="panel intro container">
+<section class="panel panel--lime tickets container">
 	<div class="row">
 		<div class="col-4 col-centered">
-			<img src="<?php bloginfo('template_url');?>/assets/images/Scorpion.gif" alt="Scorpion" width="300" height="300" />
+			<img src="<?php bloginfo('template_url');?>/assets/images/widow.gif" alt="Scorpion" width="300" height="300" />
 		</div>
 	</div>
 	
