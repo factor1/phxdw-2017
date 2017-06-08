@@ -1,6 +1,49 @@
 .left--fixed {
 	position: fixed;
 	height: 100vh;
-	width: 100%;
+	padding: 0 20px;
+	width: 32%;
+	text-align: center;
 	overflow-y: hidden;
+	
+	h1.brand {
+		text-indent: -10000px;
+		display: block;
+		width: 100%;
+		height: 200px;
+		margin: 100px auto;
+		background: url(../images/logo.svg) no-repeat center;
+		background-size: contain;
+	}
+	
+	h3.aiga {
+		text-indent: -10000px;
+		display: block;
+		height: 100px;
+		margin: 50px auto;
+		width: 70%;
+		background: url(../images/aiga.svg) no-repeat center;
+		background-size: contain;
+		
+	}
+	
+	h2 {
+		color: #fff;
+		text-align: center;
+	}
 }
+
+
+@media screen and (max-width: $small-breakpoint) {
+
+.left--fixed {
+	position: fixed;
+	height: 100vh;
+	padding: 0 20px;
+	width: 100%;
+	text-align: center;
+	overflow-y: hidden;
+	
+	}
+	
+	}

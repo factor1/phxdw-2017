@@ -18,6 +18,10 @@
 	  <div id="panels" class="col-8 col-no-pad">
 		  <?php get_template_part('parts/intro');?> 
 		  <?php get_template_part('parts/tickets');?> 
+		  <?php get_template_part('parts/email');?> 
+		  <?php get_template_part('parts/speakers');?> 
+		  <?php get_template_part('parts/sponsor');?> 
+		  <?php get_template_part('parts/contact');?> 
 	  </div>
 		  
 		  

@@ -8,9 +8,36 @@
 
 .panel--dark {
 	background: #222 url(../images/bg_dark.jpg) no-repeat;
+	background-size: cover;
 }
 
 .panel--lime {
 	background: #9cce5b  url(../images/bg_lime.jpg) no-repeat;
+	background-size: cover;
 }
 
+.shortpanel {
+	display: block;
+	height: auto;
+	padding: 20% 10%;
+	background: #fff;
+}
+
+
+
+
+@media screen and (max-width: $small-breakpoint) {
+	
+	.panel {
+		height: auto;
+	}
+	
+	.panel.intro {
+		margin-top: 100vh;	
+	}
+	
+	.mobile--dark {
+		background: #222 url(../images/bg_dark.jpg) no-repeat;
+		background-size: cover;
+	}
+}

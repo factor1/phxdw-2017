@@ -2,7 +2,7 @@
   Gulpfile.js
 ------------------------------------------------------------------------------*/
 // Theme information (name, starting theme version)
-var theme        = 'your-theme-name',
+var theme        = 'PHX Design Week 2017',
     version      = '0.0.1';
 
 // Set the paths you will be working with
