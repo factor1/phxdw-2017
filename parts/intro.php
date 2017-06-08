@@ -1,7 +1,7 @@
 <section class="panel intro mobile--dark container">
 	<div class="row">
-		<div class="col-4 col-centered">
-			<img src="<?php bloginfo('template_url');?>/assets/images/Scorpion.gif" alt="Scorpion" width="300" height="300" />
+		<div class="col-6 col-centered">
+			<img src="<?php bloginfo('template_url');?>/assets/images/Scorpion.gif" class="glitch" width="300" height="300" />
 		</div>
 	</div>
 	
