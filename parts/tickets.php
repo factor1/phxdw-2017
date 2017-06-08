@@ -8,7 +8,7 @@
 	
 	<div class="row">
 		<div class="col-6">
-			<img src="../assets/images/text_earlybird.png" alt="text_earlybird" width="346" height="133" />
+			<img src="<?php bloginfo('template_url');?>/assets/images/text_earlybird.png" alt="text_earlybird" width="346" height="133" />
 			<h4>Method + Madness Conference
 				<br>
 				October 27 - November 3 2017</h4>
