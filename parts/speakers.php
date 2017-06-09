@@ -7,9 +7,12 @@
 	
 	
 	<div class="row">
-		<div class="col-9 col-centered">
+		<div class="col-12 col-centered">
 			<h2>Speakers</h2>
-			<p>Cum ad ultrices in suspendisse non luctus nec quam sem erat dis himenaeos vitae purus litora elementum a etiam at sit ac.Facilisis fringilla a tempor ac cum risus vulputate curae adipiscing hendrerit penatibus non amet at.Integer pretium auctor phasellus nisl parturient lobortis scelerisque scelerisque vestibulum aliquam gravida vestibulum quis nibh dapibus amet in suspendisse parturient a.Adipiscing vitae vel lobortis cras tempor hac id lacus euismod parturient molestie quis ad quis bibendum rhoncus vestibulum tellus diam.Congue dui dis.</p>
+			<p>Since 2009, the Method + Madness Conference has brought together the Arizona design community for a weekend of actionable insights, hands­-on education, and career ­fueling inspiration. It’s the two-­day highlight of Phoenix Design Week and a fantastic opportunity to connect with other designers and creative professionals.</p>
+			
+			<p>Interested in speaking or participating in a break out? </p>
+			<a href="mailto:info@phxdw.com" class="button dark-text">Get In Touch</a>
 		</div>
 	</div>
 </section>

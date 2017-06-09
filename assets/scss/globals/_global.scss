@@ -65,3 +65,44 @@ img{
     height: 100%;
   }
 }
+
+
+
+// Buttons
+.button, .button:visited {
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: $roboto;
+	font-weight: bold;
+	padding: 15px;
+	color: $charcoal;
+	border: $charcoal 2px solid;
+	background: transparent;
+	transition: $smooth;
+	margin: 20px 0;
+}
+
+.button:hover {
+	color: $lime;
+	background: $charcoal;
+}
+
+
+.button.dark-text {
+	color: #fff;
+	border-color: #fff;
+}
+
+.button.dark-text:hover {
+	background: $lime;
+}
+
+.button.light-text {
+	color: $charcoal;
+	border-color: $charcoal;
+}
+
+.button.light-text:hover {
+	color: #fff;
+	background: $charcoal;
+}

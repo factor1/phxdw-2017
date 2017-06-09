@@ -20,7 +20,7 @@
 		<div class="col-6">
 			
 			<h4>Get your tickets while they are discounted. Limited to 100 tickets</h4>
-			<p>Act fast and get deep discounts now on PHXDW advance tickets! Better yet, become an AIGA member for as little as $50/year and save 
+			<p style="margin-bottom:40px;">Act fast and get deep discounts now on PHXDW advance tickets! Better yet, become an AIGA member for as little as $50/year and save 
 				even more — up to 30% off full-price admission.</p>
 			
 			<div class="pricing-table">
@@ -60,7 +60,7 @@
 					<div class="col-4 sm-col-4 text-left"><p> <strike> $149 full price </strike></p></div>
 				</div>
 				
-				<a href="https://www.eventbrite.com/notavailable" class="button dark-text">Buy Tickets</a>
+				<a href="https://www.eventbrite.com/notavailable" class="button light-text">Buy Tickets</a>
 			</div>
 			
 		</div>
