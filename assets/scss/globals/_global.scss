@@ -33,6 +33,13 @@ body {
   background-size: cover;
 }
 
+
+@media screen and (max-width: $small-breakpoint) {
+	body {
+		background-size: 500px 1000px;
+		}
+	}
+
 // Hide empty paragraphs
 p:empty{
   display: none !important;

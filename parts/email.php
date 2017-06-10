@@ -1,8 +1,8 @@
 <section class="shortpanel email container">	
 	<div class="row">
-		<div class="col-9 col-centered">
+		<div class="col-12 col-centered">
 			<h2 class="text-lime">Get The Updates</h2>
-			<p>Phoenix Design Week is heating up. Be the first to know about PHXDW events, Method + Madness Conference speakers and more.</p>
+			<p>Phoenix Design Week is the premier design event in Arizona for designers, developers, students, educators, writers, illustrators and marketing professionals. Each year, over 500 individuals gather in downtown Phoenix to celebrate and share their skills, while another 5,000+ stay up to date on the event through social media and email.</p>
 			
 			<div id="mc_embed_signup" class="container">
 				<form action="//aiga.us5.list-manage.com/subscribe/post?u=fb9deb0302&amp;id=f1592b3c15" 

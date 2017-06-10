@@ -10,18 +10,18 @@
 		<div class="col-6">
 			<img src="<?php bloginfo('template_url');?>/assets/images/text_earlybird.png" class="text_earlybird" width="346" height="133" />
 			<br><br>
-			<h4>Method + Madness Conference
+			<h4>Method + Madness Conference
 				<br>
-				October 27 - November 3 2017</h4>
-				<p>Tickets include admission to PHXDW Opening Party on October 27th, evening reception on Saturday, 
-					October 28th and PHXDW Closing Party on November 3rd.</p>
+				October 28 - 29, 2017</h4>
+				<p>Conference tickets include admission to the PHXDW Opening Party on Friday, October 27, the Saturday evening reception on October 28 and the PHXDW Closing Party on November 3rd.
+</p>
 		</div>
 		
 		<div class="col-6">
 			
-			<h4>Get your tickets while they are discounted. Limited to 100 tickets</h4>
-			<p style="margin-bottom:40px;">Act fast and get deep discounts now on PHXDW advance tickets! Better yet, become an AIGA member for as little as $50/year and save 
-				even more — up to 30% off full-price admission.</p>
+			<h4>GET YOUR EARLY BIRD TICKET NOW AND SAVE!</h4>
+			<p style="margin-bottom:40px;">Only 100 Early Bird tickets are available, so grab your spot now and save up to 60% off the price of a full-price ticket! And, as an extra bonus for our most loyal PHXDW fans, you also get a FREE conference t-shirt with your Early Bird ticket! See order form for details.
+</p>
 			
 			<div class="pricing-table">
 				<div class="row row--full-width">

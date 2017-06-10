@@ -24,7 +24,7 @@
 .shortpanel {
 	display: block;
 	height: auto;
-	padding: 20% 10%;
+	padding: 5% 10%;
 	background: #fff;
 }
 
@@ -43,6 +43,7 @@ img.glitch {
 	
 	.panel {
 		height: auto;
+		background-size: 100% 100%;
 	}
 	
 	.panel.intro {
@@ -63,9 +64,17 @@ img.glitch {
   Introduction
 ----------------------------------------------------------------------------*/
 
-.intro p {
+
+.intro {
+	
+	h2 {
+		color: $lime;
+	}
+	
+	p {
 	color: #fff;
 	font-size: 20px;
+	}
 }
 
 

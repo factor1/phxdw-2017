@@ -6,7 +6,7 @@
 
 <p>Between the two-­day Method + Madness Conference and a host of local events taking place throughout the week, companies have plenty of opportunities to put their brand in front of an excited, targeted audience. All that’s missing is you.</p>
 
-<a href="" class="button">DOWNLOAD THE SPONSORSHIP BROCHURE</a> <a href="mailto:" class="button">Contact about Sponsorship</a>
+<a href="mailto:Danielle.knots@arizona.aiga.org" class="button">Contact about Sponsorship</a>
 		</div>
 	</div>
 </section>

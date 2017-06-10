@@ -44,8 +44,32 @@
 	padding: 0 20px;
 	width: 100%;
 	text-align: center;
-	overflow-y: hidden;
+	//overflow-y: hidden;
 	
+	
+		h1.brand {
+			text-indent: -10000px;
+			display: block;
+			width: 80%;
+			height: 150px;
+			margin: 100px auto 50;
+			background: url(../images/logo.svg) no-repeat center;
+			background-size: contain;
+		}
+		
+		h2 {font-size: 1.8em !important;}
+		
+		h3.aiga {
+			text-indent: -10000px;
+			display: block;
+			height: 70px;
+			margin: 50px auto;
+			width: 70%;
+			background: url(../images/aiga.svg) no-repeat center;
+			background-size: contain;
+			
+		}
 	}
 	
-	}
+	
+}

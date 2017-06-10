@@ -11,8 +11,8 @@
 			<h2>Speakers</h2>
 			<p>Since 2009, the Method + Madness Conference has brought together the Arizona design community for a weekend of actionable insights, hands­-on education, and career ­fueling inspiration. It’s the two-­day highlight of Phoenix Design Week and a fantastic opportunity to connect with other designers and creative professionals.</p>
 			
-			<p>Interested in speaking or participating in a break out? </p>
-			<a href="mailto:info@phxdw.com" class="button dark-text">Get In Touch</a>
+			<p>Interested in speaking or participating in a breakout session?</p>
+			<a href="mailto:President@arizona.aiga.org" class="button dark-text">Get In Touch</a>
 		</div>
 	</div>
 </section>
