@@ -1,7 +1,7 @@
 <section class="panel mobile--dark speakers container">
 	<div class="row">
 		<div class="col-6 col-centered">
-			<img src="<?php bloginfo('template_url');?>/assets/images/jag.gif" class="glitch" width="300" height="300" />
+			<img src="<?php bloginfo('template_url');?>/assets/images/MtLion.gif" class="glitch" width="300" height="300" />
 		</div>
 	</div>
 	

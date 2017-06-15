@@ -1,7 +1,7 @@
 <section class="panel panel--lime tickets container">
 	<div class="row">
 		<div class="col-6 col-centered">
-			<img src="<?php bloginfo('template_url');?>/assets/images/widow.gif" class="glitch" width="300" height="300" />
+			<img src="<?php bloginfo('template_url');?>/assets/images/Spider.gif" class="glitch" width="300" height="300" />
 		</div>
 	</div>
 	
@@ -60,7 +60,7 @@
 					<div class="col-4 sm-col-4 text-left"><p> <strike> $149 full price </strike></p></div>
 				</div>
 				
-				<a href="https://www.eventbrite.com/notavailable" class="button light-text">Buy Tickets</a>
+				<a href="https://phxdwmethodmadness2017.eventbrite.com/" class="button light-text">Buy Tickets</a>
 			</div>
 			
 		</div>
