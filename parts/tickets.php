@@ -13,7 +13,7 @@
 			<h4>Method + Madness Conference
 				<br>
 				October 28 - 29, 2017</h4>
-				<p>Conference tickets include admission to the PHXDW Opening Party on Friday, October 27, the Saturday evening reception on October 28 and the PHXDW Closing Party on November 3rd.
+				<p>Conference tickets include admission to the PHXDW Kickoff Party on Friday, October 27, the Saturday evening reception on October 28 and the PHXDW Closing Party on November 3rd.
 </p>
 		</div>
 		
