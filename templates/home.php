@@ -13,9 +13,7 @@
 <section class="hero home_hero container">
 	<div class="row hero-content text-center">
 		<div class="col-12">
-			<h1 class="">Phoenix Design Week<br>is on!</h1>
-			<h3 class="">Enjoy over a dozen events across the city.</h3>
-			<p><a href="http://phxdw.com/events" class="button white">See Event Schedule</a></p>
+			GIF here of logo and glitch
 		</div>
 	</div>
 </section>
@@ -31,8 +29,7 @@
 
 <section class="container home-intros halfsplit">
 	<div class="row">
-		<div class="leftyleft">
-				<div class="thecontent">
+				<div class="col-12 thecontent">
 
 					<?php if(have_posts()):
 					while(have_posts()): the_post();
@@ -40,11 +37,11 @@
 			     	endwhile;
 			     	endif ?>
 				</div><?php // end thecontent ?>
-		</div><?php // end leftyleft ?>
+		</div><?php // end row ?>
 
-		<div class="rightyright stretch">
-			<div class="content-a">
-				<div class="thecontent">
+		<div class="row">
+			<div class="col-6">
+				<div class="thecontent text-center">
 
 				<h3 style="text-pink">Attend the Method + Madness Conference</h3>
 		    	<p>Check out this year’s speakers and reserve your spot now!</p>
@@ -52,40 +49,23 @@
 
 
 				</div><?php // end thecontent ?>
-			</div><?php // end content a ?>
+			</div><?php // end col-6 ?>
 
-			<div class="content-b">
-				<div class="thecontent">
+			<div class="col-6">
+				<div class="thecontent text-center">
 
 				<h3 class="">See all Phoenix Design Week events</h3>
 				<p class="">There are design events all week across the city.</p>
 				<a href="<?php echo home_url(); ?>/events" class="button purple ">SEE THE EVENT SCHEDULE</a>
 
 				</div><?php // end thecontent ?>
-			</div><?php // end content b ?>
-		</div><?php // end rightyright ?>
+			</div><?php // end col-6 ?>
+		</div><?php // end row ?>
 	</div><?php // end row ?>
 </section>
 
 
 
-
-
-<?php
-//============ ** ============ //
-// 	   Become a Sponsor CTA
-//============ ** ============ //
-?>
-
-<section class="container home-sponsor">
-	<div class="row">
-		<div class="col-10 col-centered text-center">
-			<h3 class="" style="max-width: 600px; margin: 30px auto 40px">See what’s happening at the Method + Madness conference</h3>
-<!-- 			<p class="">Invest in the most celebrated event in the Arizona design community, and hundreds of creative professionals will take notice.</p> -->
-			<a href="<?php echo home_url(); ?>/mm-program" class="button white text-pink">View the schedule</a>
-		</div>
-	</div>
-</section>
 
 
 

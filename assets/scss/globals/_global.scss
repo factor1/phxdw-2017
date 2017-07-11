@@ -24,12 +24,12 @@ html a {
 }
 
 body {
-  font                       : 100%/1.25 'Roboto Condensed', arial, helvetica, sans-serif;
+  font                       : 100%/1.25 $roboto, arial, helvetica, sans-serif;
   min-height                 : 100%;
   overflow-y                 : scroll;
   /* has to be scroll, not auto */
   -webkit-overflow-scrolling : touch;
-  background: #222 url(../images/bg_dark.jpg) no-repeat fixed;
+  //background: #222 url(../images/bg_dark.jpg) no-repeat fixed;
   background-size: cover;
 }
 
