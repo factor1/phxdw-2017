@@ -7,11 +7,11 @@
 <section class="container hero">
 	<div class="row hero-content">
 		<div class="col-10 col-centered text-center">
-			<h1 class="text-white">Sponsor Phoenix Design Week</h1>
+			<h1 class="">Sponsor Phoenix Design Week</h1>
 	
-	<p class="text-white">Phoenix Design Week is the premier design event in Arizona for designers, students, educators, writers, illustrators, and marketing professionals. Each year, over 450 individuals gather in downtown Phoenix to celebrate and share their skills, while another 4,000+ stay up to date on the event through social media and email. </p>
+	<p class="">Phoenix Design Week is the premier design event in Arizona for designers, students, educators, writers, illustrators, and marketing professionals. Each year, over 450 individuals gather in downtown Phoenix to celebrate and share their skills, while another 4,000+ stay up to date on the event through social media and email. </p>
 	
-	<p class="text-white">Between the two-­day Method + Madness Conference and a host of local events taking place
+	<p class="">Between the two-­day Method + Madness Conference and a host of local events taking place
 	throughout the week, companies have plenty of opportunities to put their brand in front of an
 	excited, targeted audience. All that’s missing is you.</p>
 	
@@ -57,7 +57,7 @@
 	<div class="row" style="margin:0 auto; padding:60px 0;">
 		<div class="col-12 col-centered" style="padding-left:0px; padding-right: 0px;">
 		
-		<h2 class="text-center text-blue">Sponsorship opportunities</h2>
+		<h2 class="text-center">Sponsorship opportunities</h2>
 		
 		<?php if( have_rows('levels') ):?>
 			<ul>
@@ -70,7 +70,7 @@
 			</ul>
 		<?php endif; ?>
 		
-		<a href="http://phxdw.com/wp-content/uploads/2016/06/phxdw-2016-sponsorship-packet-051316.pdf" class="button pink">Download the sponsorship brochure</a>
+		<a href="http://phxdw.com/wp-content/uploads/2016/06/phxdw-2016-sponsorship-packet-051316.pdf" class="button">Download the sponsorship brochure</a>
 
 		</div>
 	</div>
@@ -89,12 +89,12 @@
 <section class="container home-sponsor">
 	<div class="row">
 		<div class="col-10 col-centered text-center">
-			<h3 class="text-white">Other sponsorship opportunities with AIGA</h3>
-			<p class="text-white">AIGA Arizona hosts over 25 events annually attended by thousands of Arizona designers. If you
+			<h3 class="">Other sponsorship opportunities with AIGA</h3>
+			<p class="">AIGA Arizona hosts over 25 events annually attended by thousands of Arizona designers. If you
 would like to support AIGA Arizona directly, there are multiple opportunities to interact with the
 Arizona design community year­ round.</p>
 
-<a href="http://arizona.aiga.org/about-us/support/" class="button white"><span class="text-teal">See ways to support AIGA AZ</span></a>
+<a href="http://arizona.aiga.org/about-us/support/" class="button"><span class="">See ways to support AIGA AZ</span></a>
 	
 		</div>
 	</div>
@@ -111,7 +111,7 @@ Arizona design community year­ round.</p>
 <section class="container" id="event_form">
 	<div class="row">
 		<div class="col-12">
-		<h2 class="text-center text-white">Contact us</h2>
+		<h2 class="text-center ">Contact us</h2>
 		
 		<?php gravity_form( 2, false, false, false, '', false ); ?>
 		</div>

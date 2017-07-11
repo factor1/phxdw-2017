@@ -13,15 +13,15 @@
 <section class="hero mmconf_hero container">
 	<div class="row hero-content">
 		<div class="col-10 col-centered text-center">
-			<h1 class="text-white">
+			<h1 class="">
 				Method + Madness Conference
 			</h1>
-			<h3 class="text-white">
+			<h3 class="">
 				October 22-­23, 2016
 				<br>The Phoenix Convention Center
 				<br>8am Check­in • 9am Talks begin
 			</h3>
-			<a href="https://www.eventbrite.com/e/method-madness-conference-phxdw-2016-tickets-24939107542" class="button white text-purple">
+			<a href="https://www.eventbrite.com/e/method-madness-conference-phxdw-2016-tickets-24939107542" class="button">
 				Claim Your Spot
 			</a>
 		</div>
@@ -65,7 +65,7 @@
 		if( $query->have_posts() ):
 		?>
 			<div class="row row--justify-content-start speakerthumbgrid">
-				<h2 class="col-12 text-white text-center">
+				<h2 class="col-12  text-center">
 					M+M Speakers
 				</h2>
 				<?php while( $query->have_posts() ): $query->the_post();?>
@@ -93,8 +93,8 @@
 		<?php endif; wp_reset_postdata();?>
 		
 		<div class="col-11 col-centered">
-			<a href="http://phxdw.com/mm-program/" class="button purple" style="display:block; width:100%; margin-top:20px;">
-				<h3 class="text-white" style="text-transform:capitalize; margin:15px">View the full program schedule <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+			<a href="http://phxdw.com/mm-program/" class="button" style="display:block; width:100%; margin-top:20px;">
+				<h3 class="" style="text-transform:capitalize; margin:15px">View the full program schedule <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
 			</a>
 		</div>
 		
@@ -121,7 +121,7 @@
 		if( $query->have_posts() ):
 		?>
 			<div class="row row--justify-content-start speakerthumbgrid">
-				<h2 class="col-12 text-white text-center">
+				<h2 class="col-12  text-center">
 					M+M Breakout Speakers
 				</h2>
 				<?php while( $query->have_posts() ): $query->the_post();?>
@@ -146,8 +146,8 @@
 		<?php endif; wp_reset_postdata();?>
 		
 		<div class="col-11 col-centered">
-			<a href="http://phxdw.com/mm-program/" class="button purple" style="display:block; width:100%; margin-top:20px;">
-				<h3 class="text-white" style="text-transform:capitalize; margin:15px">View the full program schedule <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
+			<a href="http://phxdw.com/mm-program/" class="button" style="display:block; width:100%; margin-top:20px;">
+				<h3 class="" style="text-transform:capitalize; margin:15px">View the full program schedule <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
 			</a>
 		</div>
 		
@@ -207,7 +207,7 @@
 			
 			<p>
 				Main parking entrance is at 2nd and Monroe, southeast corner, enter on 2nd st</p>
-			<a href="http://dtphx.org/things-to-do/" class="button white">
+			<a href="http://dtphx.org/things-to-do/" class="button">
 				Learn About Downtown Phoenix
 			</a>
 		</div>
@@ -228,23 +228,23 @@
 		<div class="leftyleft stretch">
 			<div class="thecontent">
 
-				<h2 class="text-pink">How does Method + Madness compare to other conferences?</h2>
+				<h2 class="">How does Method + Madness compare to other conferences?</h2>
 				<p>Not all conferences are created equal. Here’s why you should definitely attend this one.</p>
 
-				<a href="<?php echo home_url(); ?>/compare-conferences" class="button pink">SEE HOW M+M STACKS UP</a>
+				<a href="<?php echo home_url(); ?>/compare-conferences" class="button">SEE HOW M+M STACKS UP</a>
 
 			</div>
 		</div>
 
 		<div class="rightyright stretch">
 			<div class="thecontent">
-				<h2 class="text-white">
+				<h2 class="">
 					Need help convincing your boss?
 				</h2>
 				<p>
 					The Method + Madness Conference is a solid investment in your design career.
 				</p>
-				<a href="<?php echo home_url(); ?>/convince-your-boss/" class="button purple">WHY YOU SHOULD ATTEND</a>
+				<a href="<?php echo home_url(); ?>/convince-your-boss/" class="button">WHY YOU SHOULD ATTEND</a>
 			</div>
 		</div>
 	</div>
@@ -262,11 +262,11 @@
 <section class="container pricegrid">
 	<div class="row">
 		<div class="col-10 col-centered">
-			<h2 class="text-center text-white">
+			<h2 class="text-center ">
 				Get your Method + Madness tickets now!
 			</h2>
 
-			<p class="text-white text-center">
+			<p class=" text-center">
 				All tickets include entrance to the Method + Madness Conference, PHXDW 2016 Kickoff Party,
 				Method + Madness Evening Reception, and the PHXDW 2016 Closing Party
 			</p>
@@ -302,9 +302,9 @@
 <div class="row">
 	<div class="leftyleft stretch">
 		<div class="thecontent">
-			<h2 class="text-white">Are you a student on a shoestring?</h2>
+			<h2 class="">Are you a student on a shoestring?</h2>
 			<p>Every year, we offer a limited number of student scholarships to attend the M+M Conference. </p>
-			<a href="<?php echo home_url(); ?>/student-application/" class="button pink">LEARN MORE</a>
+			<a href="<?php echo home_url(); ?>/student-application/" class="button">LEARN MORE</a>
 
 		</div>
 	</div>
@@ -313,7 +313,7 @@
 		<div class="thecontent">
 			<h2 class="text-purple">Why students love M+M</h2>
 			<p>Don’t consider yourself a professional yet? We don’t mind! Here's why you should attend.</p>
-			<a href="<?php echo home_url(); ?>/why-students-should-attend/" class="button purple">GET THE DETAILS</a>
+			<a href="<?php echo home_url(); ?>/why-students-should-attend/" class="button">GET THE DETAILS</a>
 
 		</div>
 	</div>

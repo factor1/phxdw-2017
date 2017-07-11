@@ -13,10 +13,10 @@
 <section class="hero mmconf_hero container">
 	<div class="row hero-content">
 		<div class="col-10 col-centered text-center">
-			<h1 class="text-white">
+			<h1 class="">
 				Method + Madness Program
 			</h1>
-			<h3 class="text-white">
+			<h3 class="">
 				October 22-­23, 2016
 				<br>The Phoenix Convention Center
 				<br>8am Check­in • 9am Talks begin
