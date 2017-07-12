@@ -1,7 +1,13 @@
 .home_hero {
-	min-height: 100vh;
 	background: $charcoal-bg;
 	display: block;
+	position: relative;
+	z-index: -2;
+	top: -100px;
+	
+	.hero-content {
+		padding: 500px 10%;
+	}
 }
 
 section.container {

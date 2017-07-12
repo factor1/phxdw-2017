@@ -1,0 +1,66 @@
+// Buttons
+.button, .button:visited {
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: $roboto;
+	font-weight: bold;
+	padding: 15px;
+	color: $charcoal;
+	border: $charcoal 2px solid;
+	background: transparent;
+	transition: $smooth;
+	margin: 20px 0;
+}
+
+.button:hover {
+	color: $lime;
+	background: $charcoal;
+}
+
+
+.button.dark-text {
+	color: #fff;
+	border-color: #fff;
+}
+
+.button.dark-text:hover {
+	background: $lime;
+}
+
+.button.light-text {
+	color: $charcoal;
+	border-color: $charcoal;
+}
+
+.button.light-text:hover {
+	color: #fff;
+	background: $charcoal;
+}
+
+
+// Glitched out buttons
+.button#glitch {
+	cursor: pointer;
+      -webkit-touch-callout: none; 
+      -webkit-user-select: none;   
+      -khtml-user-select: none;    
+      -moz-user-select: none;      
+      -ms-user-select: none;
+      position: relative;
+      z-index: 2;
+	}
+	
+	 .layers {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    #layer1 {
+      color: rgba(255, 0, 174, 1);
+      z-index: 1;
+    }
+    #layer2 {
+      color: rgba(27, 255, 0, 1);
+      z-index: 1;
+    }

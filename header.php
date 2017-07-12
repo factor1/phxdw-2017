@@ -34,20 +34,36 @@
 
 <body <?php body_class(); ?>>
 
-  <?php // Header ?>
-  <header class="container">
-	  <div class="row">
+
+	<header class="container">
+	  	<div class="row">
+		  	
+<?php if(is_page_template('templates/home.php')) { ?>
+
+		  	<div class="col-10 text-center">
+		  	<?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1)); ?>
+		  	</div>
+
+
+
+<?php 
+}
+	else {
+	?>
+
 		  <div class="col-4">
 			  Logo
 		  </div>
 		  <div class="col-5">
-			  NAV
+			  <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1)); ?>
 		  </div>
 		  <div class="col-3">
 			  <a href="#">Buy Tickets</a>
 		  </div>
+	  <?php } ?>
+	  
+	  
 	  </div>
-
   </header>
 
   <?php // END Header Start Main Content ?>
