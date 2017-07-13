@@ -10,11 +10,11 @@
 // 			Home HERO
 //============ ** ============ //?>
 
-<section class="hero home_hero container">
+<section class="hero home_hero">
 	<div class="row hero-content text-center">
-		<div class="col-12">
-			GIF here of logo and glitch
-		</div>
+		<video id="bgvid" autoplay="" loop="" muted="" poster="#" style="background-image: url(#)">
+			<source src="<?php bloginfo('template_url');?>/assets/images/gitch1080.mp4" type="video/mp4">
+    	</video>
 	</div>
 </section>
 
