@@ -9,12 +9,13 @@
 		<div class="col-10 col-centered text-center">
 			<h1 class="">Sponsor Phoenix Design Week</h1>
 	
-	<p class="">Phoenix Design Week is the premier design event in Arizona for designers, students, educators, writers, illustrators, and marketing professionals. Each year, over 450 individuals gather in downtown Phoenix to celebrate and share their skills, while another 4,000+ stay up to date on the event through social media and email. </p>
+	<p class="">Phoenix Design Week is the premier design event in Arizona for designers, students, educators, writers, illustrators, and marketing professionals. Each year, over 500 individuals gather in downtown Phoenix to celebrate and share their skills, while another 5,000+ stay up to date on the event through social media and email. </p>
 	
 	<p class="">Between the two-­day Method + Madness Conference and a host of local events taking place
 	throughout the week, companies have plenty of opportunities to put their brand in front of an
 	excited, targeted audience. All that’s missing is you.</p>
 	
+	<H1>OLD LINK Hard Coded</H1>
 	<a href="http://phxdw.com/wp-content/uploads/2016/06/phxdw-2016-sponsorship-packet-051316.pdf" class="button white">Download the sponsorship brochure</a>
 	
 		</div>
@@ -70,6 +71,7 @@
 			</ul>
 		<?php endif; ?>
 		
+		<H1>OLD LINK Hard Coded</H1>
 		<a href="http://phxdw.com/wp-content/uploads/2016/06/phxdw-2016-sponsorship-packet-051316.pdf" class="button">Download the sponsorship brochure</a>
 
 		</div>

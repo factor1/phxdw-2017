@@ -17,7 +17,7 @@
 				Method + Madness Program
 			</h1>
 			<h3 class="">
-				October 22-­23, 2016
+				October 28-­29, 2017
 				<br>The Phoenix Convention Center
 				<br>8am Check­in • 9am Talks begin
 			</h3>
@@ -35,7 +35,7 @@
 <section class="container conf-program">
 	<div class="row">
 	<article class="col-11 col-centered">
-		<h3>Saturday, October 22</h3>
+		<h3>Saturday, October 28</h3>
 		
 		<?php if( have_rows('program_sat') ) : ?>
 			
@@ -58,7 +58,7 @@
 	
 	
 	<article class="col-11 col-centered">
-		<h3>Sunday, October 23</h3>
+		<h3>Sunday, October 29</h3>
 		
 		
 		<?php if( have_rows('program_sun') ) : ?>

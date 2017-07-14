@@ -97,6 +97,11 @@ Agency Sponsor
     <?php endif;?>
     
     
+    <H1>===========================<br>
+    NEW NEW NEW<br>
+    Partner tier name: Premier PHXDW Partners<br>
+    (Agency partners - 3 or 4) </H1>
+    
     
 
 
@@ -122,8 +127,10 @@ Agency Sponsor
     <?php endif;?>
     
     
-    
-    
+    <H1>===========================<br>
+    NEW NEW NEW<br>
+    Partner tier name: Method + Madness Breakout Track Sponsors<br>
+    </H1>
 
 
 

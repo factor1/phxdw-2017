@@ -17,7 +17,7 @@
 				Method + Madness Conference
 			</h1>
 			<h3 class="">
-				October 22-­23, 2016
+				October 28-­29, 2017
 				<br>The Phoenix Convention Center
 				<br>8am Check­in • 9am Talks begin
 			</h3>

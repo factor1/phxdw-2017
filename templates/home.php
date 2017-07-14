@@ -56,7 +56,7 @@
 
 				<h3 class="">See all Phoenix Design Week events</h3>
 				<p class="">There are design events all week across the city.</p>
-				<a href="<?php echo home_url(); ?>/events" class="button purple ">SEE THE EVENT SCHEDULE</a>
+				<a href="<?php echo home_url(); ?>/events" class="button">SEE THE EVENT SCHEDULE</a>
 
 				</div><?php // end thecontent ?>
 			</div><?php // end col-6 ?>

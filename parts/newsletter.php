@@ -7,7 +7,7 @@
           Sign up for email alerts
         </h2>
         <p>
-          Phoenix Design Week 2016 is heating up. Be the first to know
+          Phoenix Design Week 2017 is heating up. Be the first to know
           about PHXDW events, Method + Madness Conference speakers and more.
         </p>
       </div>

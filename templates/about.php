@@ -61,6 +61,7 @@
 <h2 class="text-pink text-center">Past Method + Madness speakers</h2>
 
 <ul>
+	<li>Aaron Draplin, Draplin Design Co.</li>
 	<li>Altay Sendil, Pinterest</li>
 	<li>Armin Vit, Under Consideration</li>
 	<li>Alex Medina, Reach Records</li>
@@ -69,6 +70,7 @@
 	<li>Becky Simpson</li>
 	<li>Brian Singer, Facebook</li>
 	<li>Bobby Martin, Original Champions of Design</li>
+	<li>Charles S. Anderson, CSA Design</li>
 	<li>Danny Yount</li>
 	<li>Debbie Millman, Sterling Brands</li>
 	<li>Eddie Opara, Pentagram</li>
@@ -84,7 +86,7 @@
 	<li>Josh Higgins, Facebook</li>
 	<li>Juan Carlos Pagan, Deutsch NY</li>
 	<li>Justin Ahrens, Rule 29</li>
-	<li>Kate Bingaman­Burt</li>
+	<li>Kate Bingaman-­Burt</li>
 	<li>Kelly Stevens, Whole Foods</li>
 	<li>Kenneth Fitzgerald</li>
 	<li>Lotta Niemenan</li>
@@ -93,8 +95,9 @@
 	<li>PJ McCormick, Amazon</li>
 	<li>Rich Roat, House Industries</li>
 	<li>Sam Harrison, Zing Zone</li>
+	<li>Sean Adams, ArtCenter College for Design</li>
 	<li>Stefan Bucher, 344 Loves You</li>
-	<li>Stewart Scott­Curran, Creative Live</li>
+	<li>Stewart Scott-­Curran, Creative Live</li>
 	<li>Todd Berger & Lucian F&ouml;hr</li>
 	<li>Von Glitschka</li>
 	<li>Yomar Agusto</li>
