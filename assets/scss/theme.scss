@@ -19,6 +19,7 @@
 // Mixins
 @import 'mixins/sugar';
 @import 'mixins/glitch';
+@import 'mixins/media-queries';
 
 // Include Ginger
 @import 'settings';
@@ -38,7 +39,7 @@
 @import 'components/panels';
 @import 'components/menus';
 @import 'components/buttons';
-//@import 'components/footer';
+@import 'components/hero';
 
 // Plugin Overrides
 @import 'plugins/overrides';

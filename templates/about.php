@@ -58,7 +58,7 @@
 	<div class="col-12">
 
 		
-<h2 class="text-pink text-center">Past Method + Madness speakers</h2>
+<h2 class="text-center">Past Method + Madness speakers</h2>
 
 <ul>
 	<li>Aaron Draplin, Draplin Design Co.</li>

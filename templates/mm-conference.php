@@ -5,6 +5,7 @@
 ?>
 
 
+
 <?php
 //============ ** ============ //
 // 			Page HERO
@@ -46,6 +47,9 @@
 
 	</article>
 	</div>
+</section>
+
+<section class="container speakerthumbgrid">
 
 	<div class="row">
 		<div class="col-11 col-centered">
@@ -64,14 +68,15 @@
 
 		if( $query->have_posts() ):
 		?>
-			<div class="row row--justify-content-start speakerthumbgrid">
+		
+			<div class="row row--justify-content-start">
 				<h2 class="col-12  text-center">
 					M+M Speakers
 				</h2>
 				<?php while( $query->have_posts() ): $query->the_post();?>
 					<div class="col-4 speakerthumb">
 						<a href="<?php the_permalink();?>">
-							<div class="profilepic">
+							<div class="profilepic glitch--hover">
 								<?php the_post_thumbnail('profile-picture'); ?>
 							</div>
 							<h4>
@@ -85,25 +90,27 @@
 					</div>
 			<?php endwhile;?>
 
+<!--
 			<div class="col-4 speakerthumb">
 				<img src="<?php bloginfo('template_url');?>/assets/img/andmore.png" alt="And many more!">
 			</div>
+-->
 
 			</div>
 		<?php endif; wp_reset_postdata();?>
 		
-		<div class="col-11 col-centered">
+		<div class="col-4 col-centered">
 			<a href="http://phxdw.com/mm-program/" class="button" style="display:block; width:100%; margin-top:20px;">
 				<h3 class="" style="text-transform:capitalize; margin:15px">View the full program schedule <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
 			</a>
 		</div>
 		
 		</div>
-		
-		
-		
-		
-		
+	</div>
+</section>
+
+<section class="container breakoutthumbgrid">		
+	<div class="row">
 		<div class="col-11 col-centered">
 		<?php
 		$args = array(
@@ -120,7 +127,7 @@
 
 		if( $query->have_posts() ):
 		?>
-			<div class="row row--justify-content-start speakerthumbgrid">
+			<div class="row row--justify-content-start">
 				<h2 class="col-12  text-center">
 					M+M Breakout Speakers
 				</h2>
@@ -152,14 +159,10 @@
 		</div>
 		
 		</div>
-		
-		
-		
-		
-		
 	</div>
+</section>	
+		
 
-</section>
 
 
 <?php
