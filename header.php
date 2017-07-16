@@ -22,7 +22,6 @@
 
   <?php wp_head(); ?>
   
-  
   <?php 
 	  // HIDE Google analytics for now
 		  
@@ -46,20 +45,17 @@
 
 
 
-<?php 
-}
-	else {
-	?>
+<?php }
+else {
+?>
+		  <div class="col-4 header--branding">
+			  <h1><a href="<?php bloginfo( 'home' ); ?>">PHX Design Week 2017</a></h1>
+		  </div>
+		  <div class="col-8">
+			  <a href="#" class="button header--buynow">Buy Tickets</a>
+			  <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1, 'container_id' => 'interior-menu')); ?>
+		  </div>
 
-		  <div class="col-4">
-			  Logo
-		  </div>
-		  <div class="col-5">
-			  <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1)); ?>
-		  </div>
-		  <div class="col-3">
-			  <a href="#">Buy Tickets</a>
-		  </div>
 	  <?php } ?>
 	  
 	  

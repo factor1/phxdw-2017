@@ -16,19 +16,26 @@ Agency Sponsor
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="text-teal">
+        <h2 class="">
           PHXDW is made possible by generous sponsors
         </h2>
       </div>
     </div>
 
-    <?php // Title Sponsors ?>
+
+
+
+    <?php // Title Sponsors 
+	    
+	    // Do we even have this as an option anymore?
+	    
+    ?>
     <?php if(have_rows('title_sponsors', 'option')):?>
     
     <div class="row">
       <div class="col-12 text-center">
         <h4 class="sponsors--headline">
-          Premier Sponsors
+          Title Sponsors
         </h4>
       </div>
     </div>
@@ -47,46 +54,54 @@ Agency Sponsor
 
 
 
-
-
-    <?php // Premier Sponsors ?>
-    <?php if(have_rows('premier_sponsors', 'option')):?>
     
     <div class="row">
-      <div class="col-12 text-center">
+      <?php // Premier Sponsors ?>
+      <div class="col-6 text-center">
         <h4 class="sponsors--headline">
           Premier Sponsors
         </h4>
-      </div>
-    </div>
-    
-      <div class="row row--justify-content-center">
+        
         <?php while(have_rows('premier_sponsors', 'option')): the_row();?>
-          <div class="col-3 text-center sponsors--grid-item">
+          <div class="text-center sponsors--grid-item">
             <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
               <img src="<?php the_sub_field('sponsor_image');?>" alt="Sponsor Image">
             </a>
           </div>
         <?php endwhile;?>
       </div>
-    <?php endif;?>
-    
-    
-    
-    
 
+    
     <?php // Print Sponsors ?>
-    <?php if(have_rows('print_sponsors', 'option')):?>
+      <div class="col-6 text-center">
+        <h4 class="sponsors--headline">
+          Premier Print And Large Format Sponsor
+        </h4>
+        <?php while(have_rows('print_sponsors', 'option')): the_row();?>
+          <div class="text-center sponsors--grid-item">
+            <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
+              <img src="<?php the_sub_field('sponsor_image');?>" alt="Sponsor Image">
+            </a>
+          </div>
+        <?php endwhile;?>
+      </div>
+    </div>
+
+    
+    
+    
+    <?php // Agency Sponsors ?>
+    <?php if(have_rows('agency_sponsors', 'option')):?>
     <div class="row">
       <div class="col-12 text-center">
         <h4 class="sponsors--headline">
-          Premier Print And Large Format Sponsor
+          Premier PHXDW Partners
         </h4>
       </div>
     </div>
     
       <div class="row row--justify-content-center">
-        <?php while(have_rows('print_sponsors', 'option')): the_row();?>
+        <?php while(have_rows('agency_sponsors', 'option')): the_row();?>
           <div class="col-3 text-center sponsors--grid-item">
             <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
               <img src="<?php the_sub_field('sponsor_image');?>" alt="Sponsor Image">
@@ -95,13 +110,6 @@ Agency Sponsor
         <?php endwhile;?>
       </div>
     <?php endif;?>
-    
-    
-    <H1>===========================<br>
-    NEW NEW NEW<br>
-    Partner tier name: Premier PHXDW Partners<br>
-    (Agency partners - 3 or 4) </H1>
-    
     
 
 
@@ -127,11 +135,27 @@ Agency Sponsor
     <?php endif;?>
     
     
-    <H1>===========================<br>
-    NEW NEW NEW<br>
-    Partner tier name: Method + Madness Breakout Track Sponsors<br>
-    </H1>
 
+    <?php // Agency Sponsors ?>
+    <?php if(have_rows('breakout_sponsors', 'option')):?>
+    <div class="row">
+      <div class="col-12 text-center">
+        <h4 class="sponsors--headline">
+          Method + Madness Breakout Track Sponsors
+        </h4>
+      </div>
+    </div>
+    
+      <div class="row row--justify-content-center">
+        <?php while(have_rows('breakout_sponsors', 'option')): the_row();?>
+          <div class="col-3 text-center sponsors--grid-item">
+            <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
+              <img src="<?php the_sub_field('sponsor_image');?>" alt="Sponsor Image">
+            </a>
+          </div>
+        <?php endwhile;?>
+      </div>
+    <?php endif;?>
 
 
     <?php // Industry Sponsors ?>

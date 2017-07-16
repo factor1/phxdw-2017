@@ -1,0 +1,44 @@
+header {
+	background: $charcoal-bg;
+	
+	.header--branding h1 {
+		display: block;
+		margin: 15px;
+		padding: 0;
+		width: 90%;
+		height: 120px;
+		text-indent: -9000px;
+		background: url('../images/logo_white.svg') no-repeat center;
+		background-size: contain;
+		
+		a {
+			height: 100%;
+			display: block;
+			}
+		}
+		
+	.header--buynow {
+		float: right;
+		border-color: #fff;
+		color: #fff;
+	}
+	
+	#interior-menu {
+		text-align: right;
+		clear: right;
+	
+	
+		ul {
+			text-align: right;
+			
+			li:last-child a {
+				margin-right: 0;
+				padding-right: 0px;
+			}
+		}
+	}
+}
+
+body.home header {
+	background: transparent;
+}

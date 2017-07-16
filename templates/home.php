@@ -39,7 +39,7 @@
 				</div><?php // end col-7 ?>
 				
 				<div class="col-4">
-					<h3>Attend the Method + Madness Conference</h3>
+					<h2>Attend the Method + Madness Conference</h2>
 					<p>Check out this year’s speakers and reserve your spot now!</p>
 					<div class="gitch_contain">
 					<a href="<?php echo home_url(); ?>/method-and-madness-conference/" class="button">
@@ -66,7 +66,7 @@
 <section class="container home--event-cta">
 	<div class="row">
 		<div class="col-8 col-centered">
-			<h3>See all Phoenix Design Week events</h3>
+			<h2>See all Phoenix Design Week events</h2>
 			<p>There are design events all week across the city.</p>
 			<a href="<?php echo home_url(); ?>/events" class="button">SEE THE EVENT SCHEDULE</a>
 		</div>
