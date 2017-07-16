@@ -41,7 +41,11 @@
 				<div class="col-4">
 					<h3>Attend the Method + Madness Conference</h3>
 					<p>Check out this year’s speakers and reserve your spot now!</p>
-					<a href="<?php echo home_url(); ?>/method-and-madness-conference/" class="button" id="">LEARN MORE ABOUT M+M</a>
+					<div class="gitch_contain">
+					<a href="<?php echo home_url(); ?>/method-and-madness-conference/" class="button">
+						<span class="glitch" data-text="Learn More About M+">LEARN MORE ABOUT M+M</span>
+					</a>
+					</div>
 			</div><?php // end col-4 ?>
 
 
