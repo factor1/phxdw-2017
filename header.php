@@ -40,7 +40,7 @@
 		  	
 <?php if(is_page_template('templates/home.php')) { ?>
 
-		  	<div class="col-10 text-center">
+		  	<div class="col-12 text-center">
 		  	<?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1)); ?>
 		  	</div>
 

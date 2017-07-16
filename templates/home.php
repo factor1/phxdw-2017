@@ -10,14 +10,14 @@
 // 			Home HERO
 //============ ** ============ //?>
 
-<section class="hero home_hero">
-	<div class="row hero-content text-center">
-		<video id="bgvid" autoplay="" loop="" muted="" poster="#" style="background-image: url(#)">
-			<source src="<?php bloginfo('template_url');?>/assets/images/gitch1080.mp4" type="video/mp4">
-    	</video>
-	</div>
-</section>
 
+
+<?php // Video Hero // ?>
+<section class="home--video" style="background: url() center center no-repeat;">
+    <video autoplay  poster="<?php the_field('home_hero_video_poster_image');?>" id="bgvid" loop muted>
+      <source src="<?php bloginfo('template_url');?>/assets/images/glitch1080.mp4" type="video/mp4">
+    </video>
+  </section>
 
 
 <?php
@@ -27,45 +27,47 @@
 ?>
 
 
-<section class="container home-intros halfsplit">
+<section class="container home--intros">
 	<div class="row">
-				<div class="col-12 thecontent">
+				<div class="col-7 thecontent">
 
 					<?php if(have_posts()):
 					while(have_posts()): the_post();
 						the_content();
 			     	endwhile;
 			     	endif ?>
-				</div><?php // end thecontent ?>
+				</div><?php // end col-7 ?>
+				
+				<div class="col-4">
+					<h3>Attend the Method + Madness Conference</h3>
+					<p>Check out this year’s speakers and reserve your spot now!</p>
+					<a href="<?php echo home_url(); ?>/method-and-madness-conference/" class="button" id="">LEARN MORE ABOUT M+M</a>
+			</div><?php // end col-4 ?>
+
+
+
 		</div><?php // end row ?>
 
-		<div class="row">
-			<div class="col-6">
-				<div class="thecontent text-center">
 
-				<h3 style="text-pink">Attend the Method + Madness Conference</h3>
-		    	<p>Check out this year’s speakers and reserve your spot now!</p>
-		    	<a href="<?php echo home_url(); ?>/method-and-madness-conference/" class="button" id="glitch">LEARN MORE ABOUT M+M</a>
-
-
-				</div><?php // end thecontent ?>
-			</div><?php // end col-6 ?>
-
-			<div class="col-6">
-				<div class="thecontent text-center">
-
-				<h3 class="">See all Phoenix Design Week events</h3>
-				<p class="">There are design events all week across the city.</p>
-				<a href="<?php echo home_url(); ?>/events" class="button">SEE THE EVENT SCHEDULE</a>
-
-				</div><?php // end thecontent ?>
-			</div><?php // end col-6 ?>
-		</div><?php // end row ?>
-	</div><?php // end row ?>
 </section>
 
 
+<?php
+//=============== ** =============== //
+// 	   See the events CTA row
+//=============== ** =============== //
+?>
 
+
+<section class="container home--event-cta">
+	<div class="row">
+		<div class="col-8 col-centered">
+			<h3>See all Phoenix Design Week events</h3>
+			<p>There are design events all week across the city.</p>
+			<a href="<?php echo home_url(); ?>/events" class="button">SEE THE EVENT SCHEDULE</a>
+		</div>
+	</div>
+</section>
 
 
 
