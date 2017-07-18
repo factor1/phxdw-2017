@@ -15,13 +15,13 @@
 	<div class="row hero-content">
 		<div class="col-10 col-centered text-center">
 			<h1 class="">
-				Method + Madness Conference
+				<img src="<?php bloginfo('template_url');?>/assets/images/mm_wide_logo.png" alt="mm_wide_logo" width="1433" height="188" />
 			</h1>
-			<h3 class="">
+			<h2 class="">
 				October 28-­29, 2017
 				<br>The Phoenix Convention Center
 				<br>8am Check­in • 9am Talks begin
-			</h3>
+			</h2>
 			<a href="https://www.eventbrite.com/e/method-madness-conference-phxdw-2016-tickets-24939107542" class="button">
 				Claim Your Spot
 			</a>
@@ -99,7 +99,7 @@
 			</div>
 		<?php endif; wp_reset_postdata();?>
 		
-		<div class="col-4 col-centered">
+		<div class="col-4 col-centered" style="display: none;">
 			<a href="http://phxdw.com/mm-program/" class="button" style="display:block; width:100%; margin-top:20px;">
 				<h3 class="" style="text-transform:capitalize; margin:15px">View the full program schedule <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
 			</a>
@@ -152,7 +152,7 @@
 			</div>
 		<?php endif; wp_reset_postdata();?>
 		
-		<div class="col-11 col-centered">
+		<div class="col-11 col-centered" style="display: none;">
 			<a href="http://phxdw.com/mm-program/" class="button" style="display:block; width:100%; margin-top:20px;">
 				<h3 class="" style="text-transform:capitalize; margin:15px">View the full program schedule <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
 			</a>
@@ -194,7 +194,7 @@
 ?>
 <section class="container join-us">
 	<div class="row">
-		<div class="col-6 stretch joincontent">
+		<div class="col-6 joincontent">
 			<h2>Join us in downtown<br>Phoenix, AZ</h2>
 			<p>
 				M+M takes place in the heart of the city. The increasingly revitalized
@@ -214,10 +214,7 @@
 				Learn About Downtown Phoenix
 			</a>
 		</div>
-		<div class="col-6 stretch dtphxmap" style="min-height:400px;background: url(<?php bloginfo('template_url');?>/assets/img/map.png) center center no-repeat; background-size:cover; padding: 0;">
-		</div>
-	</div>
-</section>
+		
 
 <?php
 //============ ** ============ //
@@ -226,8 +223,7 @@
 ?>
 
 
-<section class="container halfsplit comparesplit">
-	<div class="row">
+	<div class="col-6">
 		<div class="leftyleft stretch">
 			<div class="thecontent">
 
@@ -303,7 +299,7 @@
 
 <section class="container halfsplit studentsplit">
 <div class="row">
-	<div class="leftyleft stretch">
+	<div class="col-6 leftyleft stretch">
 		<div class="thecontent">
 			<h2 class="">Are you a student on a shoestring?</h2>
 			<p>Every year, we offer a limited number of student scholarships to attend the M+M Conference. </p>
@@ -312,9 +308,9 @@
 		</div>
 	</div>
 
-	<div class="rightyright stretch">
+	<div class="col-6 rightyright stretch">
 		<div class="thecontent">
-			<h2 class="text-purple">Why students love M+M</h2>
+			<h2 class="">Why students love M+M</h2>
 			<p>Don’t consider yourself a professional yet? We don’t mind! Here's why you should attend.</p>
 			<a href="<?php echo home_url(); ?>/why-students-should-attend/" class="button">GET THE DETAILS</a>
 

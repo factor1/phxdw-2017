@@ -36,3 +36,52 @@
 	
 	
 }
+
+.mmconf_hero {
+	background: $charcoal-bg;
+	color: #fff;
+	
+	.button {
+		color: #fff;
+		border-color: $lime;
+	}
+	
+}
+
+.conf-content {
+	padding: 100px 0;
+	
+}
+
+.tesimonial {
+	background: #111 url(../images/photos/bparker_mm_sunday-56.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 300px 0;
+	color: #fff;
+}
+
+.join-us {
+	background: $white-bg;
+	padding: 75px 0;
+	
+	.joincontent {
+		padding-right: 50px;
+	}
+}
+
+.pricegrid {
+	padding: 75px 0;
+}
+
+
+.studentsplit {
+	background: $charcoal-bg;
+	background-size: cover;
+	padding: 120px 0;
+	color: #fff;
+	
+	.button {
+		color: #fff;
+		border-color: $lime;
+	}
+}
