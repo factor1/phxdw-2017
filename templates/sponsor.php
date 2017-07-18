@@ -61,7 +61,7 @@
 		<h2 class="text-center">Sponsorship opportunities</h2>
 		
 		<?php if( have_rows('levels') ):?>
-			<ul>
+			<ul class="sponsor--tiers">
 			<?php while( have_rows('levels') ): the_row(); ?>
 				<li class="detailblock">
 					<h3><?php the_sub_field('level_name');?></h3>

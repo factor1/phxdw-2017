@@ -1,0 +1,43 @@
+
+.sponsorcontent {
+	background: $charcoal-bg;
+	color: #fff;
+	padding: 75px 0;
+}
+
+.levels ul.sponsor--tiers {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+	li {
+		width: 48%;
+		float: left;
+		display: block;
+		margin: 0;
+		padding: 20px;
+		
+		.vol_description .button {display: none;}
+	}
+	
+	li:nth-child(2n+1) {
+		clear: left;
+	}
+	
+	&:after {
+		clear: both;
+		display: block;
+		content: '';
+	}
+}
+
+.home-sponsor  {
+	background: $charcoal-bg;
+	color: #fff;
+	padding: 75px 0;
+	
+	.button {
+		color: #fff;
+		border-color:$lime;
+	}
+}

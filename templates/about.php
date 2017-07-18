@@ -141,24 +141,24 @@
 
 
 
-<section class="container halfsplit abouthalves">
+<section class="container halfsplit abouthalves" style="display: none;">
 	<div class="row">
 		<div class="leftyleft stretch">
 			<div class="thecontent">
 
-				<h2 class="text-pink">Learn more about the Method + Madness Conference</h2>
+				<h2 class="">Learn more about the Method + Madness Conference</h2>
 				<p>The Method + Madness Conference is a solid investment in your design career.</p>
 
-				<a href="https://www.eventbrite.com/e/method-madness-conference-phxdw-2016-tickets-24939107542" class="button pink">Get your M+M ticket</a>
+				<a href="https://www.eventbrite.com/e/method-madness-conference-phxdw-2016-tickets-24939107542" class="button">Get your M+M ticket</a>
 
 			</div>
 		</div>
 
 		<div class="rightyright stretch">
 			<div class="thecontent">
-				<h2 class="text-white">	Check out <br>Phoenix Design Week events</h2>
+				<h2 class="">	Check out <br>Phoenix Design Week events</h2>
 				<p>There are design events all week across the city.</p>
-				<a href="<?php echo home_url(); ?>/events" class="button purple">See the event schedule</a>
+				<a href="<?php echo home_url(); ?>/events" class="button">See the event schedule</a>
 			</div>
 		</div>
 	</div>
