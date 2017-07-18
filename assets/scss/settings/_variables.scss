@@ -6,8 +6,10 @@
 // Colors
 
 $lime: #aacf38;
+$limebg: $lime url(../images/bg_lime.jpg);
+
 $charcoal: #323031;
-$charcoal-bg: $charcoal url(../images/bg_dark.jpg) no-repeat fixed;
+$charcoal-bg: $charcoal url(../images/bg_dark.jpg);
 
 // Fonts
 $roboto: 'Roboto Condensed';

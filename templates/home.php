@@ -62,8 +62,8 @@
 //=============== ** =============== //
 ?>
 
-
-<section class="container home--event-cta">
+<!-- Hidden Section for now.  -->
+<section class="container home--event-cta" style="display:none;">
 	<div class="row">
 		<div class="col-8 col-centered">
 			<h2>See all Phoenix Design Week events</h2>
