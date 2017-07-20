@@ -15,8 +15,7 @@
 	throughout the week, companies have plenty of opportunities to put their brand in front of an
 	excited, targeted audience. All that’s missing is you.</p>
 	
-	<H1>OLD LINK Hard Coded</H1>
-	<a href="http://phxdw.com/wp-content/uploads/2016/06/phxdw-2016-sponsorship-packet-051316.pdf" class="button white">Download the sponsorship brochure</a>
+	<a href="<?php get_bloginfo('home');?>/sponsorpack" class="button white">Download the sponsorship brochure</a>
 	
 		</div>
 	</div>
@@ -71,8 +70,8 @@
 			</ul>
 		<?php endif; ?>
 		
-		<H1>OLD LINK Hard Coded</H1>
-		<a href="http://phxdw.com/wp-content/uploads/2016/06/phxdw-2016-sponsorship-packet-051316.pdf" class="button">Download the sponsorship brochure</a>
+
+		<a href="<?php get_bloginfo('home');?>/sponsorpack" class="button">Download the sponsorship brochure</a>
 
 		</div>
 	</div>

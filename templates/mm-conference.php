@@ -127,7 +127,7 @@
 
 		if( $query->have_posts() ):
 		?>
-			<div class="row row--justify-content-start">
+			<div class="row row--justify-content-start" style="display: none;">
 				<h2 class="col-12  text-center">
 					M+M Breakout Speakers
 				</h2>
