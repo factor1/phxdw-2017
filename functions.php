@@ -8,6 +8,12 @@
   require get_template_directory() . '/inc/tweaks.php';
 
   /**
+   * Load ACF Tweaks/Options
+   */
+  require get_template_directory() . '/inc/acf.php';
+
+
+  /**
    * Load CSS and JavaScript Enqueues
    */
   require get_template_directory() . '/inc/enqueues.php';
