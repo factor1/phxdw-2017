@@ -48,13 +48,32 @@
 <?php }
 else {
 ?>
-		  <div class="col-4 header--branding">
+		  <div class="md-col-4 sm-col-8 header--branding">
 			  <h1><a href="<?php bloginfo( 'home' ); ?>">PHX Design Week 2017</a></h1>
 		  </div>
 		  <div class="col-8 md-hide-down">
 			  <a href="#" class="button header--buynow">Buy Tickets</a>
 			  <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1, 'container_id' => 'interior-menu')); ?>
 		  </div>
+		  
+		  <div class="sm-col-4 md-hide-up">
+			  <a id="nifty-nav-toggle" ><span></span></a>
+		  </div>
+		  
+		  
+		  <?php // Nifty Nav Panel ?>
+	        <div class="nifty-panel">
+	          <div class="container">
+	            <div class="row">
+	              <div class="col-12 text-right" style="padding: 0;">
+		              <a href="#" class="button header--buynow">Buy Tickets</a>
+	                <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1)); ?>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+			  
+		  
 		  			
 
 	  <?php } ?>
