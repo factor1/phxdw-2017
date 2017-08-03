@@ -11,7 +11,10 @@ var phpFiles     = ['./**/*.php', './*.php'],
     cssFiles     = ['./assets/css/*.css', '!./assets/css/*.min.css'],
     sassFiles    = ['./assets/scss/**/*.scss'],
     styleFiles   = [cssFiles, sassFiles],
-    jsFiles      = ['./assets/js/theme.js'],
+    jsFiles      = [
+    './assets/js/theme.js',
+    './node_modules/nifty-nav/src/js/nifty-nav.js'
+    ],
     imageFiles   = ['./assets/img/*.{jpg,png,gif,svg}'],
     concatFiles  = ['./assets/js/*.js', '!./assets/js/theme.min.js', '!./assets/js/all.js'],
     url          = 'wp-dev:8888'; // See https://browsersync.io/docs/options/#option-proxy

@@ -42,3 +42,32 @@ header {
 body.home header {
 	background: transparent;
 }
+
+
+.md-hide-up {display: none;}
+
+
+@include max-screen($medium) {
+	.md-hide-up {display: block !important;}
+	
+	.conf-date {
+			padding: 20px;
+			
+			p {
+				color: #fff;
+				font-size: 22px;
+				font-weight: bold;
+				margin: 0px;
+			}
+		}
+		
+	body.home header.niftyburger {
+		right: 20px;
+		
+		a span,
+		a span:before,
+		a span:after {background: #fff;}
+	}
+		
+		
+}

@@ -13,10 +13,11 @@
 
 
 <?php // Video Hero // ?>
-<section class="home--video" style="background: url() center center no-repeat;">
-    <video autoplay  poster="<?php the_field('home_hero_video_poster_image');?>" id="bgvid" loop muted>
+<section class="home--video">
+    <video autoplay id="bgvid" loop muted>
       <source src="<?php bloginfo('template_url');?>/assets/images/glitch1080.mp4" type="video/mp4">
     </video>
+    <div class="mobile-only-poster"></div>
   </section>
 
 

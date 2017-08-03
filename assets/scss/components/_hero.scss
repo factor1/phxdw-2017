@@ -6,3 +6,14 @@
 	
 	h1 {font-size: 4em;}
 }
+
+
+@include max-screen($medium) {
+	.hero {
+	min-height: 300px;
+	padding: 50px 20px;
+	
+	h1 {font-size: 2em;}
+	}
+
+}

@@ -42,6 +42,15 @@
 		  	<div class="col-12 text-center md-hide-down">
 		  	<?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1)); ?>
 		  	</div>
+		  	
+		  	<?php // Mobile only ?>
+		  	<div class="sm-col-8  md-hide-up conf-date">
+		  		<p>OCT 27 - NOV 3 2017</p>
+		  	</div>
+		  	
+		  	<div class="sm-col-4 md-hide-up niftyburger">
+			  <a id="nifty-nav-toggle" ><span></span></a>
+		  	</div>
 
 
 
@@ -56,28 +65,25 @@ else {
 			  <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1, 'container_id' => 'interior-menu')); ?>
 		  </div>
 		  
-		  <div class="sm-col-4 md-hide-up">
+		  <div class="sm-col-4 md-hide-up niftyburger">
 			  <a id="nifty-nav-toggle" ><span></span></a>
 		  </div>
 		  
-		  
-		  <?php // Nifty Nav Panel ?>
-	        <div class="nifty-panel">
-	          <div class="container">
-	            <div class="row">
-	              <div class="col-12 text-right" style="padding: 0;">
-		              <a href="#" class="button header--buynow">Buy Tickets</a>
-	                <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1)); ?>
-	              </div>
-	            </div>
-	          </div>
-	        </div>
-			  
-		  
-		  			
+<?php } ?>
 
-	  <?php } ?>
-	  
+
+<?php // Nifty Nav Panel ?>
+<div class="nifty-panel">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-right" style="padding: 0;">
+          <a href="#" class="button header--buynow">Buy Tickets</a>
+        <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1)); ?>
+      </div>
+    </div>
+  </div>
+</div>
+			  	  
 	  
 	  
 	  

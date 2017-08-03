@@ -51,7 +51,34 @@ body.home header {
       flex: 0 1 auto;
     }
   }
+  
+  .mobile-only-poster {display: none;}
+  
+  
 } // end home--video
+
+@include max-screen($medium) {
+	
+	.home--video{ 
+		
+		background: $charcoal-bg;
+		background-size: cover;
+    
+		.video {display: none;}	
+		
+		.mobile-only-poster {
+			display: block;
+			width: 80%;
+			height: 100vh;
+			min-height: 100%;
+			margin: 0px auto;
+			background: url(../images/logo_white.svg) no-repeat center;
+			background-size: contain;
+		}
+		
+	} // end home--video
+}
+	
 
 // Intro
 .home--intros {

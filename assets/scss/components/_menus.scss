@@ -34,7 +34,12 @@
 	}
 
 }
+
+.md-hide-up {display: none;}
 	
+.niftyburger {
+	height: 75px;
+}
 
 
 #nifty-nav-toggle {
@@ -78,6 +83,7 @@
 	width: 100%;
 	background: rgba($charcoal, 0.9);
 	overflow: hidden;
+	display: none;
 	
 	a.button {
 		width: 80%;
