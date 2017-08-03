@@ -36,6 +36,8 @@
 }
 
 .md-hide-up {display: none;}
+
+
 	
 .niftyburger {
 	height: 75px;
@@ -49,8 +51,8 @@
     background: none;
     position: absolute;
     transition: all .3s ease;
-    top: 0;
-    right: 0;
+    top: 37px;
+    right: 20px;
 }
 
 #nifty-nav-toggle span{
@@ -61,7 +63,7 @@
     background: #fff;
     position: absolute;
     top: 31px;
-    right: 20px;
+    right: 40px;
     display: block;
     content: '';
 }
@@ -69,19 +71,22 @@
 #nifty-nav-toggle span:before {
     top: -8px;
     right: 0;
+    background: #fff;
 }
 
 #nifty-nav-toggle span:after {
     bottom: -8px;
     top: 8px;
     right: 0;
+    background: #fff;
 }
 
 // Nifty Panel Styles
 .nifty-panel{
 	left: 0;
 	width: 100%;
-	background: rgba($charcoal, 0.9);
+	top: 150px;
+	background: rgba($charcoal, 0.95);
 	overflow: hidden;
 	display: none;
 	

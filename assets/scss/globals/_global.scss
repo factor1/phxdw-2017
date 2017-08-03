@@ -36,7 +36,9 @@ body {
 
 @media screen and (max-width: $small-breakpoint) {
 	body {
-		background-size: 500px 1000px;
+		background-size: 400px 800px;
+		max-width: 100vw;
+		overflow-x  : hidden;
 		}
 	}
 

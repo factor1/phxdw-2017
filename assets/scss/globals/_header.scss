@@ -61,12 +61,14 @@ body.home header {
 			}
 		}
 		
-	body.home header.niftyburger {
-		right: 20px;
-		
-		a span,
-		a span:before,
-		a span:after {background: #fff;}
+	body.home header a#nifty-nav-toggle {
+		top: 0px !important;
+	}
+	
+	body.home header .nifty-panel{
+		left: 0;
+		width: 100%;
+		top: 70px;
 	}
 		
 		

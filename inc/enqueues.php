@@ -27,6 +27,8 @@ function prelude_theme_scripts() {
   
   // JS
   wp_enqueue_script('prelude-js', get_template_directory_uri() . '/assets/js/theme.js', array('jquery'), THEME_VERSION, true );
+  wp_enqueue_script('niftynav-js', get_template_directory_uri() . '/assets/js/niftynav.min.js', THEME_VERSION, true );
+  
   
 }
 add_action( 'wp_enqueue_scripts', 'prelude_theme_scripts' );
