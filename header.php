@@ -61,7 +61,7 @@ else {
 			  <h1><a href="<?php bloginfo( 'home' ); ?>">PHX Design Week 2017</a></h1>
 		  </div>
 		  <div class="col-8 md-hide-down">
-			  <a href="#" class="button header--buynow">Buy Tickets</a>
+			  <a href="https://phxdwmethodmadness2017.eventbrite.com/" class="button header--buynow">Buy Tickets</a>
 			  <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1, 'container_id' => 'interior-menu')); ?>
 		  </div>
 		  
@@ -77,7 +77,7 @@ else {
   <div class="container">
     <div class="row">
       <div class="col-12 text-right" style="padding: 0;">
-          <a href="#" class="button header--buynow">Buy Tickets</a>
+          <a href="https://phxdwmethodmadness2017.eventbrite.com/" class="button header--buynow">Buy Tickets</a>
         <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1)); ?>
       </div>
     </div>
