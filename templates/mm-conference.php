@@ -22,7 +22,7 @@
 				<br>The Phoenix Convention Center
 				<br>8am Check­in • 9am Talks begin
 			</h2>
-			<a href="https://www.eventbrite.com/e/method-madness-conference-phxdw-2016-tickets-24939107542" class="button">
+			<a href="https://www.eventbrite.com/e/method-madness-conference-phxdw-2017-tickets-33597470940?aff=erelexpmlt" class="button">
 				Claim Your Spot
 			</a>
 		</div>
@@ -266,8 +266,8 @@
 			</h2>
 
 			<p class=" text-center">
-				All tickets include entrance to the Method + Madness Conference, PHXDW 2016 Kickoff Party,
-				Method + Madness Evening Reception, and the PHXDW 2016 Closing Party
+				All tickets include entrance to the Method + Madness Conference, PHXDW 2017 Kickoff Party,
+				Method + Madness Evening Reception, and the PHXDW 2017 Closing Party
 			</p>
 
 			<?php
