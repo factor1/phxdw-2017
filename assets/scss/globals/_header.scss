@@ -43,11 +43,12 @@ body.home header {
 	background: transparent;
 }
 
+@include min-screen($large) {
+	.md-hide-up {display: none;}
+}
 
-.md-hide-up {display: none;}
 
-
-@include max-screen($medium) {
+@include max-screen($large) {
 	.md-hide-up {display: block !important;}
 	
 	.conf-date {

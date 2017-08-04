@@ -57,7 +57,7 @@ body.home header {
   
 } // end home--video
 
-@include max-screen($medium) {
+@include max-screen($large) {
 	
 	.home--video{ 
 		
