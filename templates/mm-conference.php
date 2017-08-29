@@ -20,7 +20,7 @@
 			<h2 class="">
 				October 28-­29, 2017
 				<br>The Phoenix Convention Center
-				<br>8am Check­in • 9am Talks begin
+				<br>8am Check­-in • 9am Talks begin
 			</h2>
 			<a href="https://www.eventbrite.com/e/method-madness-conference-phxdw-2017-tickets-33597470940?aff=erelexpmlt" class="button">
 				Claim Your Spot
