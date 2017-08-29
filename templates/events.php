@@ -109,7 +109,7 @@
 
 
     <div class="col">
-      <a href="<?php get_field('external_event_link') ? the_field('external_event_link') : the_permalink();?>">
+      <a href="<?php the_permalink();?>">
         <h3>
           <?php the_title();?>
         </h3>
@@ -117,8 +117,8 @@
       <p><?php echo $EM_Event -> output('#_EVENTDATES');?></p>
       <?php echo $EM_Event -> output('#_EVENTEXCERPT');?>
         <a href="<?php the_permalink();?>" class="button">
-        Learn More <i class="fa fa-arrow-right"></i>
-      </a>
+        	Learn More <i class="fa fa-arrow-right"></i>
+		</a>
     </div>
 
 <?php endforeach; endif; wp_reset_postdata();?>
