@@ -41,7 +41,7 @@
 
 <section class="upcoming--list container">
 	
-<div class="row">
+<div class="row" style="display:none;">
 	<div class="sm-col-8 md-col-5 col-centered">
 		<?php
         $taxonomy     = 'event-categories';
@@ -59,10 +59,24 @@
           'title_li'     => $title
         );
       ?>
+      
+      
+     <select name="event-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> 
+    <option value=""><?php echo esc_attr(__('Select Category')); ?></option> 
 
-	  <ul>
-		 <?php wp_list_categories( $args ); ?>
-      </ul>
+    <?php 
+        $option = '<option value="' . get_option('home') . '/category/">All Categories</option>'; // change category to your custom page slug
+        $categories = get_categories($args); 
+        foreach ($categories as $category) {
+            $option .= '<option value="'.get_option('home').'/category/'.$category->slug.'">';
+            $option .= $category->cat_name;
+            $option .= ' ('.$category->category_count.')';
+            $option .= '</option>';
+        }
+        echo $option;
+    ?>
+	</select>
+
 	</div>
 </div>
 	
@@ -108,17 +122,23 @@
   ?>
 
 
-    <div class="col">
-      <a href="<?php the_permalink();?>">
-        <h3>
-          <?php the_title();?>
-        </h3>
-      </a> 
-      <p><?php echo $EM_Event -> output('#_EVENTDATES');?></p>
-      <?php echo $EM_Event -> output('#_EVENTEXCERPT');?>
-        <a href="<?php the_permalink();?>" class="button">
-        	Learn More <i class="fa fa-arrow-right"></i>
-		</a>
+    <div class="col stretch">
+	    <div class="event-card">
+		      <a href="<?php the_permalink();?>" >
+		        <h3>
+		          <?php the_title();?>
+		        </h3>
+		      </a>
+      
+		      <p>Date: <?php echo $EM_Event -> output('#_EVENTDATES');?></p>
+		      
+		      <?php echo $EM_Event -> output('#_EVENTCATEGORIES');?>
+		      
+		      <?php echo $EM_Event -> output('#_EVENTEXCERPT');?>
+		        <a href="<?php the_permalink();?>" class="button dark-text">
+		        	Learn More <i class="fa fa-arrow-right"></i>
+				</a>
+	    </div>
     </div>
 
 <?php endforeach; endif; wp_reset_postdata();?>
