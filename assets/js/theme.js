@@ -8,5 +8,16 @@ jQuery( document ).ready(function( $ ) {
 	if( isTouchDevice ) {
 		$('body').removeClass('no-touch');
 	}
-  
+
+
+/* Nifty Nav */
+
+// Nifty Nav without the mask and with sub-menu toggles
+  $('#nifty-nav-toggle').niftyNav({
+    mask: false,
+    subMenus: true
+  });
+
 });
+
+

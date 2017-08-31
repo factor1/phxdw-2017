@@ -18,23 +18,38 @@
 
 // Mixins
 @import 'mixins/sugar';
+@import 'mixins/glitch';
+@import 'mixins/media-queries';
 
 // Include Ginger
 @import 'settings';
 @import 'ginger';
+
+// Import Nifty-Nav
+@import 'settings/niftynavsettings';
+@import 'settings/nifty-nav';
 
 
 // Global Styles
 @import 'globals/global';
 @import 'globals/wordpress';
 @import 'globals/typography';
+@import 'globals/header';
+@import 'globals/footer';
 
 // Components
 @import 'components/social-menu';
 @import 'components/leftside';
 @import 'components/panels';
-//@import 'components/header';
-//@import 'components/footer';
+@import 'components/menus';
+@import 'components/buttons';
+@import 'components/hero';
+@import 'components/newsletter';
+@import 'components/sponsors';
+@import 'components/forms';
 
 // Plugin Overrides
 @import 'plugins/overrides';
+
+// Pages
+@import 'pages/pages';

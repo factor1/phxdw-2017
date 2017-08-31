@@ -1,0 +1,32 @@
+.upcoming--list {
+	background: $charcoal-bg;
+	padding: 50px 10px;
+	
+	.event-card {
+		padding: 25px;
+		p {color: #fff;}
+		
+		ul.event-categories {
+			margin: 0;
+			padding: 0;
+			
+			li {
+				list-style: none;
+				display: inline-block;
+				margin: 0;
+				padding: 0 10px;
+				border-right: 1px solid $grey;
+				&:last-of-type {
+					border-right: 0px;
+				}
+			}
+		}
+		
+	}
+}
+
+
+
+.single--event {
+	margin-bottom: 50px;
+}

@@ -1,11 +1,17 @@
 <?php
 
-  define( 'THEME_VERSION', '0.0.1' );
+  define( 'THEME_VERSION', '1.0.0' );
 
   /**
    * Load tweaks
    */
   require get_template_directory() . '/inc/tweaks.php';
+
+  /**
+   * Load ACF Tweaks/Options
+   */
+  require get_template_directory() . '/inc/acf.php';
+
 
   /**
    * Load CSS and JavaScript Enqueues

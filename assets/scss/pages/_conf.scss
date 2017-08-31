@@ -1,0 +1,89 @@
+// Speaker grids
+
+.speakerthumbgrid {
+	background: $charcoal-bg;
+	padding: 50px 0;
+	
+	h2 {color: #fff;}
+}
+.speakerthumb {
+	.profilepic img{
+/*
+		-webkit-filter: grayscale(1);
+		filter: grayscale(1);
+*/
+		opacity: 0.55;
+		transition: $smooth;
+	}
+	
+	a {
+		color: $lime;
+		
+	}
+	
+	a:hover {
+		color: #fff;
+		.profilepic img {
+			opacity: 1
+			}
+	}
+	
+	h4 {
+		margin-bottom: 0px;
+	}
+	
+	p{
+		margin-top: 5px;
+	}
+	
+	
+}
+
+.mmconf_hero {
+	background: $charcoal-bg;
+	color: #fff;
+	
+	.button {
+		color: #fff;
+		border-color: $lime;
+	}
+	
+}
+
+.conf-content {
+	padding: 100px 0;
+	
+}
+
+.tesimonial {
+	background: #111 url(../images/photos/bparker_mm_sunday-56.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 300px 0;
+	color: #fff;
+}
+
+.join-us {
+	background: $white-bg;
+	padding: 75px 0;
+	
+	.joincontent {
+		padding-right: 50px;
+	}
+}
+
+.pricegrid {
+	padding: 75px 0;
+}
+
+
+.studentsplit {
+	background: $charcoal-bg;
+	background-size: cover;
+	padding: 120px 0;
+	color: #fff;
+	
+	.button {
+		color: #fff;
+		border-color: $lime;
+	}
+}

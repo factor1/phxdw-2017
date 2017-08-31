@@ -6,12 +6,33 @@
 // Colors
 
 $lime: #aacf38;
+$limebg: $lime url(../images/bg_lime.jpg);
+
+
 $charcoal: #323031;
+$charcoal-bg: $charcoal url(../images/bg_dark.jpg);
+
+$grey: #ccc;
+$white-bg: #eee url(../images/bg_white.jpg);
 
 // Fonts
 $roboto: 'Roboto Condensed';
 
-
-
 // Animations
 $smooth: all .2s ease-in;
+
+// Breakpoints
+// -----------------------------------------------------------------------------
+$breakpoints: (
+  small: 0,
+  medium: 40em, // 640px
+  large: 65em, // 1024px
+  xlarge: 75em, // 1200px
+  xxlarge: 90em // 1440px
+);
+
+$small: map-get($breakpoints, small);
+$medium: map-get($breakpoints, medium);
+$large: map-get($breakpoints, large);
+$xlarge: map-get($breakpoints, xlarge);
+$xxlarge: map-get($breakpoints, xxlarge);

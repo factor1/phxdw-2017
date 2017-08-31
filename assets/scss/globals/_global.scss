@@ -24,19 +24,21 @@ html a {
 }
 
 body {
-  font                       : 100%/1.25 'Roboto Condensed', arial, helvetica, sans-serif;
+  font                       : 100%/1.25 $roboto, arial, helvetica, sans-serif;
   min-height                 : 100%;
   overflow-y                 : scroll;
   /* has to be scroll, not auto */
   -webkit-overflow-scrolling : touch;
-  background: #222 url(../images/bg_dark.jpg) no-repeat fixed;
+  //background: #222 url(../images/bg_dark.jpg) no-repeat fixed;
   background-size: cover;
 }
 
 
 @media screen and (max-width: $small-breakpoint) {
 	body {
-		background-size: 500px 1000px;
+		background-size: 400px 800px;
+		max-width: 100vw;
+		overflow-x  : hidden;
 		}
 	}
 
@@ -75,41 +77,3 @@ img{
 
 
 
-// Buttons
-.button, .button:visited {
-	display: inline-block;
-	text-transform: uppercase;
-	font-family: $roboto;
-	font-weight: bold;
-	padding: 15px;
-	color: $charcoal;
-	border: $charcoal 2px solid;
-	background: transparent;
-	transition: $smooth;
-	margin: 20px 0;
-}
-
-.button:hover {
-	color: $lime;
-	background: $charcoal;
-}
-
-
-.button.dark-text {
-	color: #fff;
-	border-color: #fff;
-}
-
-.button.dark-text:hover {
-	background: $lime;
-}
-
-.button.light-text {
-	color: $charcoal;
-	border-color: $charcoal;
-}
-
-.button.light-text:hover {
-	color: #fff;
-	background: $charcoal;
-}

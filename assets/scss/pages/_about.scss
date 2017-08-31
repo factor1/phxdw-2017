@@ -1,0 +1,59 @@
+.about_intro {
+	padding: 75px 0;
+}
+
+.past_speakers {
+	background: $charcoal-bg;
+	color: #fff;
+	padding: 50px 0;
+}
+
+
+.past_speakers ul {
+	width: 100%;
+	margin: 20px 0;
+	padding: 0;
+	list-style: none;
+	
+	li {
+		display: block;
+		margin: 0;
+		padding: 0 0 10px 0;
+		width: 32%;
+		float: left;
+		text-align: center;
+		}
+}
+
+.meet_team {
+	padding: 75px 0;
+	
+	p{
+		text-align: center;
+		}
+	ul {
+	width: 100%;
+	margin: 20px 0;
+	padding: 0;
+	list-style: none;
+	
+	li {
+		display: block;
+		margin: 0;
+		padding: 0 0 10px 0;
+		width: 48%;
+		float: left;
+		text-align: center;
+		}
+	}
+}
+
+
+@include max-screen($medium) {
+	
+	.past_speakers ul li,
+	.meet_team ul li {
+		width: 100%;
+		float: none;
+	}
+}

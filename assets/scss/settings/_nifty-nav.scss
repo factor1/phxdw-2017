@@ -1,0 +1,114 @@
+/*
+Nifty Nav
+By Eric Stout / Factor1
+http://factor1studios.com
+*/
+
+
+//@import '../settings/settings';
+// only use when compiling css
+
+header.nifty-nav-header{
+  z-index: $header-index;
+}
+
+.nifty-panel{
+  position: relative;
+  max-height: 100vh;
+  width: $panel-width;
+  border: 0;
+  padding: 0;
+  background: $panel-color;
+  top: $panel-top-distance;
+  display: none;
+  z-index: $panel-index;
+  overflow-y: scroll;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  -ms-overflow-style: none; /* hides the scrollbars for Internet Explorer on the panel */
+}
+
+.nifty-mask{
+  background: $mask-color;
+  height: 100%;
+  width: 100%;
+  z-index: $mask-index;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+}
+
+//animated hamburger styles
+#nifty-nav-toggle{
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: none;
+  position: absolute;
+  transition: all .3s ease;
+  top: $hamburger-position-top;
+  @if $hamburger-position-left == 'true'{
+    left: $hamburger-position-x;
+  } @else{
+    right: $hamburger-position-x;
+  }
+}
+
+#nifty-nav-toggle span, #nifty-nav-toggle span:before, #nifty-nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 30px;
+  background: $hamburger-color;
+  position: absolute;
+  top: 21px;
+  right: 0px;
+  display: block;
+  content: '';
+}
+
+#nifty-nav-toggle span:before {
+  top: -8px;
+}
+
+#nifty-nav-toggle span:after {
+  bottom: -8px;
+  top: 8px;
+}
+
+// this is where the animation magic happens
+#nifty-nav-toggle span, #nifty-nav-toggle span:before, #nifty-nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+
+#nifty-nav-toggle.nifty-active span {
+  background-color: transparent;
+}
+
+#nifty-nav-toggle.nifty-active span:before, #nifty-nav-toggle.nifty-active span:after {
+  top: 0;
+}
+
+#nifty-nav-toggle.nifty-active span:before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#nifty-nav-toggle.nifty-active span:after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+#nifty-nav-toggle:hover{
+  opacity: .5;
+}
+
+// Active hamburger
+#nifty-nav-toggle.nifty-active span:before, #nifty-nav-toggle.nifty-active span:after{
+  background: $hamburger-color-active;
+}
+
+// Lock Body Class
+.nifty-lock{
+  overflow: hidden;
+}
