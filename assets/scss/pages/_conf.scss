@@ -39,6 +39,11 @@
 	
 }
 
+.breakoutthumbgrid .speakerthumb {
+	a {color: #000;}
+	a:hover {color: $lime;}
+}
+
 .mmconf_hero {
 	background: $charcoal-bg;
 	color: #fff;
