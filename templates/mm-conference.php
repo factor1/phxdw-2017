@@ -266,8 +266,7 @@
 			</h2>
 
 			<p class=" text-center">
-				All tickets include entrance to the Method + Madness Conference, PHXDW 2017 Kickoff Party,
-				Method + Madness Evening Reception, and the PHXDW 2017 Closing Party
+				All two-day tickets include entrance to the Method + Madness Conference, PHXDW 2017 Kickoff Party, Method + Madness Evening Reception, and the PHXDW 2017 Closing Party. One-day M+M conference passes, group and AIGA discount opportunities are also available at the tickets link. 
 			</p>
 
 			<?php
