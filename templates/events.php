@@ -16,13 +16,7 @@
 			<h1 class="text-white">
 				Phoenix Design Week Events
 			</h1>
-			<p class="text-white">
-				Phoenix Design Week opens with the Kickoff Party and Method + Madness Conference, 
-				followed by an impressive series of events hosted by individual groups across Phoenix. 
-				
-				Schedule coming soon!
-<!-- 				See the current schedule below. -->
-			</p>
+			<?php the_content();?>
 		</div>
 	</div>
 </section>
@@ -36,103 +30,117 @@
 //================= ** ================ //
 ?>
 
-<section class="container weekevents">
-	<div class="row" style="padding:0px;">
-	<article class="col-12" style="padding:0px;">
+
+
+
+
+<section class="upcoming--list container">
 	
-	
-	
-	<?php
-	// Event Accordions
-	?>
-
-<?php if( have_rows('event_day') ):?>
-  <section class="flex-accordions container">
-
-    <?php while( have_rows('event_day') ): the_row(); ?>
-		<div class="big-accordian">
-      <?php // ACCORDION TITLE ?>
-      <div class="accordion--title container">
-        <div class="row">
-          <div class="col-12 titlebox">
-            <h2><?php the_sub_field('event_date');?></h2><i class="fa fa-chevron-down"></i>
-          </div>
-        </div>
-        <?php // ACCORDION CONTENT ?>
-        <div class="accordion--content">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-              
-              <div class="row">
-			  	
-			  	<?php if( have_rows('events') ): while( have_rows('events') ): the_row(); ?>
-               	 	<div class="col-4 event-col4">
-		               	 <h4 class="text-teal"><?php the_sub_field('event_name'); ?></h4>
-		               	 
-		               	 <p><?php the_sub_field('event_date_location'); ?></p>
-		               	 <p><?php the_sub_field('event_detail'); ?></p>
-		               	 
-		               	 <?php if (the_sub_field('event_cta_url')): ?>
-		               	 	<a href="<?php the_sub_field('event_cta_url'); ?>" class="button purple text-white">
-		               	 		<?php the_sub_field('event_button_text>'); ?>
-					   	 	</a>
-					   	 	<?php endif;?>
-               	 	</div>
-                <?php endwhile; else: ?>
-		               	 <div class="col-6 col-centered">
-		               	 <p class="text-center">There aren't any events scheduled for this day.<br>
-		               	 Want to get yours on the calendar?</p>
-		               	 </div>
-		               	
-		       	<?php endif; ?>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-		</div> <?php // END big-accordian ?>
-    <?php endwhile;?>
-
-  </section>
-<?php endif;?>
-
-
-
-
-
-
-
+<div class="row" style="display:none;">
+	<div class="sm-col-8 md-col-5 col-centered">
 		<?php
-		//  ACF Structure / Naming
-		
-		//  Master repeater - event_day
-		
-			// Section Title:		event_date (JS accordian)
-				// Sub repeater:		events
-					// Item title: 			event_name - h4
-					// Event location:		event_date_location -p
-					// Event detail:		event_detail -p
-					// Button URL:			event_cta_url -a
-					// CTA button label:	event_button_text -a 
-		
-		
-		// No Events found content
-		
-		/*
-		<p>Phoenix Design Week continues after Method + Madness with a series of daily events and
-		workshops throughout the metro Phoenix area. There are no events scheduled yet for this day.</p>
-		
-		<p><a href="#event_form">Want to get yours on the calendar?</a></p>
-		
-		*/  ?>
+        $taxonomy     = 'event-categories';
+        $orderby      = 'name';
+        $show_count   = false;
+        $pad_counts   = false;
+        $hierarchical = true;
+        $title        = '';
+        $args = array(
+          'taxonomy'     => $taxonomy,
+          'orderby'      => $orderby,
+          'show_count'   => $show_count,
+          'pad_counts'   => $pad_counts,
+          'hierarchical' => $hierarchical,
+          'title_li'     => $title
+        );
+      ?>
+      
+      
+     <select name="event-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> 
+    <option value=""><?php echo esc_attr(__('Select Category')); ?></option> 
 
-	</article>
+    <?php 
+        $option = '<option value="' . get_option('home') . '/category/">All Categories</option>'; // change category to your custom page slug
+        $categories = get_categories($args); 
+        foreach ($categories as $category) {
+            $option .= '<option value="'.get_option('home').'/category/'.$category->slug.'">';
+            $option .= $category->cat_name;
+            $option .= ' ('.$category->category_count.')';
+            $option .= '</option>';
+        }
+        echo $option;
+    ?>
+	</select>
+
 	</div>
+</div>
+	
+	
+	
+  <div class="row">
+  <div class="sm-block-grid-1 block-grid-3">
+  <?php
+  /**
+   * Query All Events
+   */
+  $arrRecentEvents = array();
+  $today = date('Y-m-d');
+  $args = array(
+      'post_type' => 'event',
+      'posts_per_page' => -1,
+      'orderby' => 'meta_value',
+      'meta_key' => '_event_start_date',
+      'order' => 'ASC',
+      'meta_query' => array(
+          array(
+              'key' => '_event_start_date',
+              'value' => $today,
+              'compare' => '>=',
+
+          )
+      )
+  );
+  $query = new WP_Query($args);
+  if ($query->have_posts()) {
+      while($query->have_posts()) {
+        $query->the_post();
+        $post->category = wp_get_post_terms($post->ID.'event-categories');
+        $arrRecentEvents[] = $post; // add post to recent posts array
+      }
+  }
+
+  //If we have events
+  if (!empty($arrRecentEvents)):
+
+  global $post;
+  foreach ($arrRecentEvents as $i => $post): $EM_Event = em_get_event($post->ID, 'post_id');
+  ?>
 
 
+    <div class="col stretch">
+	    <div class="event-card">
+		      <a href="<?php the_permalink();?>" >
+		        <h3>
+		          <?php the_title();?>
+		        </h3>
+		      </a>
+      
+		      <p>Date: <?php echo $EM_Event -> output('#_EVENTDATES');?></p>
+		      
+		      <?php echo $EM_Event -> output('#_EVENTCATEGORIES');?>
+		      
+		      <?php echo $EM_Event -> output('#_EVENTEXCERPT');?>
+		        <a href="<?php the_permalink();?>" class="button dark-text">
+		        	Learn More <i class="fa fa-arrow-right"></i>
+				</a>
+	    </div>
+    </div>
+
+<?php endforeach; endif; wp_reset_postdata();?>
+  </div>
+  </div>
 </section>
+
 
 
 
