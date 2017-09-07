@@ -15,7 +15,7 @@
 	<div class="row hero-content">
 		<div class="col-10 col-centered text-center">
 			<h1 class="">
-				<img src="<?php bloginfo('template_url');?>/assets/images/mm_wide_logo.png" alt="mm_wide_logo" width="1433" height="188" />
+				<img src="<?php bloginfo('template_url');?>/assets/images/mm_primary.gif" alt="mm_wide_logo" width="1433" height="188" />
 			</h1>
 			<h2 class="">
 				October 28-­29, 2017
