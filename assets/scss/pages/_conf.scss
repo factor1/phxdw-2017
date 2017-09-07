@@ -94,9 +94,23 @@
 // https://codepen.io/codyhouse/pen/FdkEf
 
 
+.cd-container { /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+	width: 90%;
+	max-width: $large;
+	margin: 0 auto;
+
+	&::after { /* clearfix */
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+
 #cd-timeline {
 	position: relative;
 	padding: 2em 0;
+	
 	margin: {
 		top: 2em;
 		bottom: 2em;
@@ -110,7 +124,7 @@
 		left: 18px;
 		height: 100%;
 		width: 4px;
-		//background: darken($background, 5%);
+		background: #ccc;
 	}
 
 
@@ -120,6 +134,7 @@
 	position: relative;
 	margin: 2em 0;
 	@include clearfix;
+	
 
 	&:first-child {
 		margin-top: 0;
@@ -129,8 +144,7 @@
 		margin-bottom: 0;
 	}
 
-/*
-	@include MQ(L) {
+	@include min-screen($large) {
 		margin: 4em 0;
 
 		&:first-child {
@@ -141,7 +155,6 @@
 			margin-bottom: 0;
 		}
 	}
-*/
 }
 
 .cd-timeline-img {
@@ -176,14 +189,13 @@
 		//background: $color-5;
 	}
 
-/*
-	@include MQ(L) {
+	@include min-screen($large) {
 		width: 60px;
 		height: 60px;
 		left: 50%;
 		margin-left: -30px;
 
-		/* Force Hardware Acceleration in WebKit 
+		/* Force Hardware Acceleration in WebKit */
 		-webkit-transform: translateZ(0);
 		-webkit-backface-visibility: hidden;
 
@@ -196,7 +208,6 @@
 			@include animation(cd-bounce-1 .6s);
 		}
 	}
-*/
 }
 
 @include keyframes(cd-bounce-1) {
@@ -218,18 +229,17 @@
 .cd-timeline-content {
 	position: relative;
 	margin-left: 60px;
-	background: $color-3;
-	@include border-radius;
+	background: #eee;
 	padding: 1em;
-	//box-shadow: 0 3px 0 darken($background, 5%);
+	box-shadow: 0 3px 1px #ccc;
 	@include clearfix;
 
 	h2 {
-		color: $color-1;
+		//color: $color-1;
 	}
 
 	p, .cd-read-more, .cd-date {
-		@include font-size(13px);
+		
 	}
 
 	.cd-read-more, .cd-date {
@@ -244,12 +254,11 @@
 	.cd-read-more {
 		float: right;
 		padding: .8em 1em;
-		//background: $link;
-		//color: $color-3;
-		@include border-radius;
+		background: #333;
+		color: #fff;
 
 		.no-touch &:hover {
-			//background-color: lighten($link, 5%);
+			background-color: $lime;
 		}
 	}
 
@@ -267,24 +276,24 @@
 		height: 0;
 		width: 0;
 		border: 7px solid transparent;
-		//border-right: 7px solid $color-3;
+		border-right: 7px solid #333;
 	}
 
-	@include MQ(M) {
+	@include min-screen($medium) {
 		h2 {
-			@include font-size(20px);
+			//@include font-size(20px);
 		}
 
 		p {
-			@include font-size(16px);
+			//@include font-size(16px);
 		}
 
 		.cd-read-more, .cd-date {
-			@include font-size(14px);
+			//@include font-size(14px);
 		}
 	}
 
-	@include MQ(L) {
+	@include min-screen($large) {
 		margin-left: 0;
 		padding: 1.6em;
 		width: 45%;
@@ -293,7 +302,7 @@
 			top: 24px;
 			left: 100%;
 			border-color: transparent;
-			//border-left-color: $color-3;
+			border-left-color: #333;
 		}
 
 		.cd-read-more {
@@ -305,7 +314,7 @@
 			width: 100%;
 			left: 122%;
 			top: 6px;
-			@include font-size(16px);
+			font-size: 16px;
 		}
 
 		.cd-timeline-block:nth-child(even) & {
@@ -316,7 +325,7 @@
 				left: auto;
 				right: 100%;
 				border-color: transparent;
-				//border-right-color: $color-3;
+				border-right-color: #333;
 			}
 
 			.cd-read-more {
@@ -341,12 +350,6 @@
 	}
 }
 
-@include MQ(L) {
-	/* inverse bounce effect on even content blocks */
-	.cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
-		@include animation(cd-bounce-2-inverse .6s);
-	}
-}
 
 @include keyframes(cd-bounce-2) {
 	0% {
