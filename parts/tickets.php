@@ -5,7 +5,7 @@
 					<p class="price">$299</p>
 					</div>
 				</div>
-
+				
 				<div class="col-3 priceblock second stretch">
 					<div class="content">
 					<p class="title">AIGA Non-Member<br>General Admission</p>
