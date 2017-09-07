@@ -87,7 +87,7 @@
   $today = date('Y-m-d');
   $args = array(
       'post_type' => 'event',
-      'posts_per_page' => 12,
+      'posts_per_page' => -1,
       'orderby' => 'meta_value',
       'meta_key' => '_event_start_date',
       'order' => 'ASC',
