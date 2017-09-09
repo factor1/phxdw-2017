@@ -87,6 +87,16 @@
 				<h2 id="<?php the_sub_field('title'); ?>"><?php the_sub_field('title'); ?></h2>
 				<span class="cd-date"><?php the_sub_field('time'); ?></span>
 				<?php the_sub_field('detail'); ?>
+				
+				<?php if( have_rows('breakouts') ) : while( have_rows('breakouts') ): the_row();?>
+							<div class="breakout">
+								
+								<p class="tag"><?php the_sub_field('tag'); ?></p><p class="room"><?php the_sub_field('room'); ?></p>
+								<p class="speaker"><?php the_sub_field('speaker'); ?><span>&nbsp;<?php the_sub_field('company'); ?></span></p>
+								<p class="title"><?php the_sub_field('talk_title'); ?></p>
+								<hr>
+							</div>
+						<?php endwhile; endif; ?>
 				<!--<a href="#0" class="cd-read-more">Read more</a> -->
 				
 			</div> <!-- cd-timeline-content -->
