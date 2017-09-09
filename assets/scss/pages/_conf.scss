@@ -121,10 +121,15 @@
 		content: '';
 		position: absolute;
 		top: 0;
-		left: 18px;
+		left: 50%;
 		height: 100%;
 		width: 4px;
 		background: #ccc;
+		
+		@include max-screen($large) {
+			//Dump this shit on mobile
+			display:none;
+			}
 	}
 
 
@@ -161,10 +166,15 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 40px;
-	height: 40px;
+	width: 10px;
+	height: 10px;
 	border-radius: 50%;
-	box-shadow: 0 0 0 4px , inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
+	background: #000;
+	
+	@include max-screen($large) {
+			//Dump this shit on mobile
+			display:none;
+			}
 
 	img {
 		display: block;
@@ -177,17 +187,6 @@
 		margin-top: -12px;
 	}
 
-	&.cd-picture {
-		//background: $color-4;
-	}
-
-	&.cd-movie {
-		//background: $color-2;
-	}
-
-	&.cd-location {
-		//background: $color-5;
-	}
 
 	@include min-screen($large) {
 		width: 60px;
@@ -199,36 +198,12 @@
 		-webkit-transform: translateZ(0);
 		-webkit-backface-visibility: hidden;
 
-		.cssanimations &.is-hidden {
-			visibility: hidden;
-		}
-
-		.cssanimations &.bounce-in {
-			visibility: visible;
-			@include animation(cd-bounce-1 .6s);
-		}
-	}
-}
-
-@include keyframes(cd-bounce-1) {
-	0% {
-		opacity: 0;
-		@include transform(scale(.5));
-	}
-
-	60% {
-		opacity: 1;
-		@include transform(scale(1.2));
-	}
-
-	100% {
-		@include transform(scale(1));
 	}
 }
 
 .cd-timeline-content {
 	position: relative;
-	margin-left: 60px;
+	//margin-left: 60px;
 	background: #eee;
 	padding: 1em;
 	box-shadow: 0 3px 1px #ccc;
@@ -244,6 +219,7 @@
 
 	.cd-read-more, .cd-date {
 		display: inline-block;
+
 	}
 
 	p {
@@ -277,7 +253,23 @@
 		width: 0;
 		border: 7px solid transparent;
 		border-right: 7px solid #333;
+		
+		@include max-screen($large) {
+			//Dump this shit on mobile
+			display:none;
+			}
 	}
+	
+	.cd-date {
+		@include max-screen($large) {
+			display: inline;
+			float: none;
+			
+			}
+
+	}
+	
+	
 
 	@include min-screen($medium) {
 		h2 {

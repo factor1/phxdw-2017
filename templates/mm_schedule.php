@@ -39,27 +39,29 @@
 	<section id="cd-timeline" class="cd-container">
 		<div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-picture">
-				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+				
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
-				<h2>Title of section 1</h2>
+				<h2>Event Name</h2>
+				<span class="cd-date">Saturday 9am</span>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
 				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 14</span>
+				
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-movie">
-				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg" alt="Movie">
+				
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
 				<h2>Title of section 2</h2>
+				<span class="cd-date">Saturday 11am</span>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
 				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 18</span>
+				
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 
