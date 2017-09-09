@@ -36,86 +36,71 @@
 	<div class="row">
 	<article class="col-11 col-centered">
 	
+	
+	<?php if( have_rows('program_sat') ) : ?>
+	<h2 class="text-center">Saturday</h2>
 	<section id="cd-timeline" class="cd-container">
+		
+		<?php while( have_rows('program_sat') ): the_row(); ?>	
 		<div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-picture">
 				
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
-				<h2>Event Name</h2>
-				<span class="cd-date">Saturday 9am</span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
+				<h2 id="<?php the_sub_field('title'); ?>"><?php the_sub_field('title'); ?></h2>
+				<span class="cd-date"><?php the_sub_field('time'); ?></span>
+				<?php the_sub_field('detail'); ?>
+				<!--<a href="#0" class="cd-read-more">Read more</a> -->
 				
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
+		<?php endwhile; ?>
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-movie">
-				
-			</div> <!-- cd-timeline-img -->
 
-			<div class="cd-timeline-content">
-				<h2>Title of section 2</h2>
-				<span class="cd-date">Saturday 11am</span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>Title of section 3</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 24</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>Title of section 4</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Feb 14</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>Title of section 5</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Feb 18</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-movie">
-				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg" alt="Movie">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>Final Section</h2>
-				<p>This is the content of the last section</p>
-				<span class="cd-date">Feb 26</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
 	</section> <!-- cd-timeline -->
+	 <?php else: ?>
+       	 	<div class="col-6 col-centered">
+	   	 		<p class="text-center">There aren't any events scheduled for this day.</p>
+	   	 	</div>
+       	
+	   	<?php endif; ?>
+	   	
+	   	
+	   	
+	   	
+	   	
+	   	
+	   	
+	   	<?php if( have_rows('program_sun') ) : ?>
+	   	<hr>
+	<h2 class="text-center" id="sunday">Sunday</h2>
+	<section id="cd-timeline" class="cd-container">
+		
+		<?php while( have_rows('program_sun') ): the_row(); ?>	
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2 id="<?php the_sub_field('title'); ?>"><?php the_sub_field('title'); ?></h2>
+				<span class="cd-date"><?php the_sub_field('time'); ?></span>
+				<?php the_sub_field('detail'); ?>
+				<!--<a href="#0" class="cd-read-more">Read more</a> -->
+				
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+		<?php endwhile; ?>
+
+
+	</section> <!-- cd-timeline -->
+	 <?php else: ?>
+       	 	<div class="col-6 col-centered">
+	   	 		<p class="text-center">There aren't any events scheduled for this day.</p>
+	   	 	</div>
+       	
+	   	<?php endif; ?>
 
 	
 	</article>
