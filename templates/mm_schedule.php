@@ -35,53 +35,31 @@
 <section class="container conf-program">
 	<div class="row">
 	<article class="col-11 col-centered">
-		<h3>Saturday, October 28</h3>
-		
-		<?php if( have_rows('program_sat') ) : ?>
-			
-			<ul class="daily-details">	
-				<?while( have_rows('program_sat') ): the_row(); ?>	
-					<li class="row">
-						<div class="col-4"><?php the_sub_field('time'); ?></div>
-						<div class="col-8"><?php the_sub_field('detail'); ?></div>
-					</li>
-				<?php endwhile; ?>
-			</ul>
-        <?php else: ?>
-       	 	<div class="col-6 col-centered">
-	   	 		<p class="text-center">There aren't any events scheduled for this day.</p>
-	   	 	</div>
-       	
-	   	<?php endif; ?>
-		       	
-	</article>
 	
 	
-	<article class="col-11 col-centered">
-		<h3>Sunday, October 29</h3>
+	<?php if( have_rows('program_sat') ) : ?>
+	<h2 class="text-center">Saturday</h2>
+	<section id="cd-timeline" class="cd-container">
 		
-		
-		<?php if( have_rows('program_sun') ) : ?>
-			
-			<ul class="daily-details">	
-				<?while( have_rows('program_sun') ): the_row(); ?>	
-					<li class="row">
-						<div class="col-4"><?php the_sub_field('time'); ?></div>
-						<div class="col-8"><?php the_sub_field('detail'); ?>
-						<?php if( have_rows('breakouts') ): while( have_rows('breakouts') ): the_row(); ?>
-							<div class="breakout">
-								<p class="tag"><?php the_sub_field('tag'); ?></p><p class="room"><?php the_sub_field('room'); ?></p>
-								<p class="speaker"><?php the_sub_field('speaker'); ?><span>&nbsp;<?php the_sub_field('company'); ?></span></p>
-								<p class="title"><?php the_sub_field('talk_title'); ?></p>
-							</div>
-						<?php endwhile; endif; ?>
-						
-						
-						</div>
-					</li>
-				<?php endwhile; ?>
-			</ul>
-        <?php else: ?>
+		<?php while( have_rows('program_sat') ): the_row(); ?>	
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2 id="<?php the_sub_field('title'); ?>"><?php the_sub_field('title'); ?></h2>
+				<span class="cd-date"><?php the_sub_field('time'); ?></span>
+				<?php the_sub_field('detail'); ?>
+				<!--<a href="#0" class="cd-read-more">Read more</a> -->
+				
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+		<?php endwhile; ?>
+
+
+	</section> <!-- cd-timeline -->
+	 <?php else: ?>
        	 	<div class="col-6 col-centered">
 	   	 		<p class="text-center">There aren't any events scheduled for this day.</p>
 	   	 	</div>
@@ -90,9 +68,42 @@
 	   	
 	   	
 	   	
+	   	
+	   	
+	   	
+	   	
+	   	<?php if( have_rows('program_sun') ) : ?>
+	   	<hr>
+	<h2 class="text-center" id="sunday">Sunday</h2>
+	<section id="cd-timeline" class="cd-container">
 		
-	</article>
+		<?php while( have_rows('program_sun') ): the_row(); ?>	
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2 id="<?php the_sub_field('title'); ?>"><?php the_sub_field('title'); ?></h2>
+				<span class="cd-date"><?php the_sub_field('time'); ?></span>
+				<?php the_sub_field('detail'); ?>
+				<!--<a href="#0" class="cd-read-more">Read more</a> -->
+				
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+		<?php endwhile; ?>
+
+
+	</section> <!-- cd-timeline -->
+	 <?php else: ?>
+       	 	<div class="col-6 col-centered">
+	   	 		<p class="text-center">There aren't any events scheduled for this day.</p>
+	   	 	</div>
+       	
+	   	<?php endif; ?>
+
 	
+	</article>
 	</div>
 	</section>	
 	
