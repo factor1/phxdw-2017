@@ -1,29 +1,36 @@
 <div class="row" style="margin: 40px auto;">
-				<div class="col-3 priceblock first stretch">
+				<div class="col-2 priceblock first stretch">
 					<div class="content">
 					<p class="title">AIGA Member<br>General Admission</p>
-					<p class="price">$229<strike>$299</strike></p>
+					<p class="price">$299</p>
 					</div>
 				</div>
 				
-				<div class="col-3 priceblock second stretch">
+				<div class="col-2 priceblock second stretch">
 					<div class="content">
 					<p class="title">AIGA Non-Member<br>General Admission</p>
-					<p class="price">$299<strike>$379</strike></p>
+					<p class="price">$379</p>
 					</div>
 				</div>
 
-				<div class="col-3 priceblock third stretch">
+				<div class="col-2 priceblock third stretch">
 					<div class="content">
 					<p class="title">AIGA Member<br>Student Admission</p>
 					<p class="price">$99</p>
 					</div>
 				</div>
 
-				<div class="col-3 priceblock fourth stretch">
+				<div class="col-2 priceblock fourth stretch">
 					<div class="content">
 					<p class="title">AIGA Non-Member<br>Student Admission</p>
-					<p class="price">$129<strike>$149</strike></p>
+					<p class="price">$149</p>
+					</div>
+				</div>
+				
+				<div class="col-2 priceblock fifth stretch">
+					<div class="content">
+					<p class="title">One-Day Passes</p>
+					<p class="price">from $59-$199<br>See order form for details.</p>
 					</div>
 				</div>
 
