@@ -15,7 +15,7 @@
 	<div class="row hero-content">
 		<div class="col-10 col-centered text-center">
 			<h1 class="">
-				<img src="<?php bloginfo('template_url');?>/assets/images/mm_wide_logo.png" alt="mm_wide_logo" width="1433" height="188" />
+				<img src="<?php bloginfo('template_url');?>/assets/images/mm_primary.gif" alt="mm_wide_logo" width="1433" height="188" />
 			</h1>
 			<h2 class="">
 				October 28-­29, 2017
@@ -266,8 +266,7 @@
 			</h2>
 
 			<p class=" text-center">
-				All tickets include entrance to the Method + Madness Conference, PHXDW 2017 Kickoff Party,
-				Method + Madness Evening Reception, and the PHXDW 2017 Closing Party
+				All two-day tickets include entrance to the Method + Madness Conference, PHXDW 2017 Kickoff Party, Method + Madness Evening Reception, and the PHXDW 2017 Closing Party. One-day M+M conference passes, group and AIGA discount opportunities are also available at the tickets link. 
 			</p>
 
 			<?php
