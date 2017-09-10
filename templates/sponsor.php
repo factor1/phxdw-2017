@@ -114,7 +114,7 @@ Arizona design community year­ round.</p>
 		<div class="col-12">
 		<h2 class="text-center ">Contact us</h2>
 		
-		<?php gravity_form( 2, false, false, false, '', false ); ?>
+		<?php gravity_form( 1, false, false, false, '', false ); ?>
 		</div>
 		
 	</div>
