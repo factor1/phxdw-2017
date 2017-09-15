@@ -90,7 +90,7 @@
 <section class="container home-sponsor">
 	<div class="row">
 		<div class="col-10 col-centered text-center">
-			<h3 class="">Other sponsorship opportunities with AIGA</h3>
+			<h3 class="">Other Opportunities with AIGA</h3>
 			<p class="">AIGA Arizona hosts over 25 events annually attended by thousands of Arizona designers. If you
 would like to support AIGA Arizona directly, there are multiple opportunities to interact with the
 Arizona design community year­ round.</p>
@@ -112,7 +112,7 @@ Arizona design community year­ round.</p>
 <section class="container" id="event_form">
 	<div class="row">
 		<div class="col-12">
-		<h2 class="text-center ">Contact us</h2>
+		<h2 class="text-center ">HAVE A SPONSORSHIP IDEA THAT FITS YOUR BUSINESS?</h2>
 		
 		<?php gravity_form( 1, false, false, false, '', false ); ?>
 		</div>
