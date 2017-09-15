@@ -243,6 +243,8 @@
 		float: left;
 		padding: .8em 0;
 		opacity: .7;
+		font-size: 22px;
+		color: $charcoal;
 	}
 
 	&::before {
@@ -268,6 +270,22 @@
 			
 			}
 
+	}
+	
+	
+	.breakout {
+		p {
+			margin: 0 0 5px;
+		}
+		
+		p.tag {
+			font-weight: bold
+		}
+		
+		.details {
+			padding-left: 15px;
+			border-top: 1px solid #ccc;
+		}
 	}
 	
 	
@@ -332,47 +350,9 @@
 			}
 		}
 
-		.cssanimations &.is-hidden {
-			visibility: hidden;
-		}
-
-		.cssanimations &.bounce-in {
-			visibility: visible;
-			@include animation(cd-bounce-2 .6s);
-		}
 	}
 }
 
 
-@include keyframes(cd-bounce-2) {
-	0% {
-		opacity: 0;
-		@include transform(translateX(-100px));
-	}
 
-	60% {
-		opacity: 1;
-		@include transform(translateX(20px));
-	}
-
-	100% {
-		@include transform(translateX(0));
-	}
-}
-
-@include keyframes(cd-bounce-2-inverse) {
-	0% {
-		opacity: 0;
-		@include transform(translateX(100px));
-	}
-
-	60% {
-		opacity: 1;
-		@include transform(translateX(-20px));
-	}
-
-	100% {
-		@include transform(translateX(0));
-	}
-}
 

@@ -25,7 +25,6 @@
 			<?php if(get_field('quote')):?>
 			<div class="speakerquote">
 				<blockquote><h3><?php the_field('quote');?></h3></blockquote>
-				<cite><?php the_title();?></cite>
 			</div>
 			<?php endif;?>
 			
