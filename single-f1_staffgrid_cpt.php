@@ -56,24 +56,29 @@
 	<div class="row">
 		<div class="col-8 staffbio">
 			<?php the_field('staff_bio');?>
+			
+			<?php if(get_field('quote')):?>
+			<div class="speakerquote">
+				<blockquote><h2><?php the_field('quote');?></h2></blockquote>
+				<cite><?php the_title();?></cite>
+			</div>
+			<?php endif;?>
+			
+			
 		</div>
 
 		<div class="col-4">
 			<div class="f1_mentor_details_social_container">
-			<h3 class="text-teal">Find them online</h3>
+			<h3 class="">Find them online</h3>
 				<?php if(get_field( "twitter_url" )) : echo('<a href="'); the_field( "twitter_url" ); echo('"><i class="fa fa-twitter" aria-hidden="true"></i></a>');  endif; ?>
 				<?php if(get_field( "facebook_url" )) : echo('<a href="'); the_field( "facebook_url" ); echo('"><i class="fa fa-facebook" aria-hidden="true"></i></a>');  endif; ?>
 				<?php if(get_field( "instagram_url" )) : echo('<a href="'); the_field( "instagram_url" ); echo('"><i class="fa fa-instagram" aria-hidden="true"></i></a>');  endif; ?>
 				<?php if(get_field( "url" )) : echo('<a href="'); the_field( "url" ); echo('"><i class="fa fa-globe" aria-hidden="true"></i></a>');  endif; ?>
-
-
-
-								</div>
-			<div class="speakerquote">
-				<?php the_field('quote');?>
 			</div>
 		</div>
 	</div>
+	
+	
 
 
 </section>
@@ -126,6 +131,7 @@
 <section class="container pricegrid">
 	<div class="row">
 		<div class="col-10 col-centered">
+			<hr>
 			<h2 class="text-center text-white">
 				Get your ticket to see <?php the_title();?> & many others!
 			</h2>
