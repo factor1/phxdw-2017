@@ -23,6 +23,43 @@ header {
 		color: #fff;
 	}
 	
+	
+	.menu-primary-menu-container ul {
+					
+			li {position: relative}
+
+			
+			li ul {display: none;}
+			
+			
+			li:hover ul{
+				display: block;
+				width: 200px;
+				position: absolute;
+				top: 0px;
+				padding-top: 40px;
+				left: 0px;
+				z-index: 22;
+				
+				li {
+					display: block;
+					width: 100%;
+					background: $charcoal;
+					
+					&:first-child {
+						border-top: 1px solid $lime;
+					}
+					
+					a {
+						display: block;
+						padding: 15px 10px;
+					}
+				}
+				
+			}
+		}
+
+	
 	#interior-menu {
 		text-align: right;
 		clear: right;
@@ -35,6 +72,7 @@ header {
 				margin-right: 0;
 				padding-right: 0px;
 			}
+			
 		}
 	}
 }
