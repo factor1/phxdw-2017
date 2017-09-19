@@ -49,7 +49,7 @@
 	</div>
 </section>
 
-<section class="container speakerthumbgrid">
+<section id="speakers" class="container speakerthumbgrid">
 
 	<div class="row">
 		<div class="col-11 col-centered">
