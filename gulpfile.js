@@ -3,7 +3,7 @@
 ------------------------------------------------------------------------------*/
 // Theme information (name, starting theme version)
 var theme        = 'PHX Design Week 2017',
-    version      = '1.0.0';
+    version      = '1.1.0';
 
 // Set the paths you will be working with
 var phpFiles     = ['./**/*.php', './*.php'],
