@@ -37,7 +37,7 @@
 <?php if(is_page_template('templates/home.php')) { ?>
 
 		  	<div class="col-12 text-center md-hide-down">
-		  	<?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1)); ?>
+		  	<?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>2)); ?>
 		  	</div>
 		  	
 		  	<?php // Mobile only ?>
@@ -59,7 +59,7 @@ else {
 		  </div>
 		  <div class="col-8 md-hide-down">
 			  <a href="https://phxdwmethodmadness2017.eventbrite.com/" class="button header--buynow">Get Tickets</a>
-			  <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1, 'container_id' => 'interior-menu')); ?>
+			  <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>2, 'container_id' => 'interior-menu')); ?>
 		  </div>
 		  
 		  <div class="sm-col-4 md-col-4 md-hide-up niftyburger">
@@ -75,7 +75,7 @@ else {
     <div class="row">
       <div class="col-12 text-right" style="padding: 0;">
           <a href="https://phxdwmethodmadness2017.eventbrite.com/" class="button header--buynow">Get Tickets</a>
-        <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>1)); ?>
+        <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>2)); ?>
       </div>
     </div>
   </div>
