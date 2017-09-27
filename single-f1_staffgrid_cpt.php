@@ -47,9 +47,12 @@
 <section class="container speaker-top">
 	<div class="row">
 		<div class="col-6 stretch nopadding">
-			<?php if(has_post_thumbnail()) {
-			the_post_thumbnail('large');
-			} else {	}
+			<?php 
+			if (get_field('glitch_gif')) { ?>
+				<img src="<?php the_field('glitch_gif');?>">
+			<?php 
+			}
+			else the_post_thumbnail('large');
 			?>
 		</div>
 

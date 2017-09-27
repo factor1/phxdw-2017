@@ -73,11 +73,17 @@
 				<h2 class="col-12  text-center">
 					M+M Speakers
 				</h2>
-				<?php while( $query->have_posts() ): $query->the_post();?>
+				<?php while( $query->have_posts() ): $query->the_post(); ?>
 					<div class="col-4 speakerthumb">
 						<a href="<?php the_permalink();?>">
 							<div class="profilepic glitch--hover">
-								<?php the_post_thumbnail('profile-picture'); ?>
+								<?php 
+								if (get_field('glitch_gif')) { ?>
+									<img src="<?php the_field('glitch_gif');?>">
+								<?php 
+								}
+								else the_post_thumbnail('profile-picture');
+								?>
 							</div>
 							<h4>
 								<?php the_title();?>
