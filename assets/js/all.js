@@ -13,12 +13,14 @@ jQuery( document ).ready(function( $ ) {
 
 /* Nifty Nav */
 
-// Nifty Nav without the mask and with sub-menu toggles
+  // Nifty Nav without the mask and with sub-menu toggles
   $('#nifty-nav-toggle').niftyNav({
     mask: false,
     subMenus: true
   });
 
+  // Alert Bar
+  $('.alert-bar').delay(700).slideToggle(700);
+  $('header').delay(700).animate({'margin-top': $('.alert-bar').height() + 'px'}, 700);
+
 });
-
-
