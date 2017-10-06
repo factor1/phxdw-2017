@@ -133,3 +133,45 @@ body.home header {
 		
 		
 }
+
+
+
+// Mobile nav panel
+.nifty-panel .menu-primary-menu-container ul {
+					
+			li {position: relative}
+			
+			li.menu-item-has-children {
+				padding-right: 0;
+			}
+			
+			li.menu-item-has-children:after {
+				top: 0px;
+				content:"";
+			}
+
+			
+			li ul {display: block;}
+			
+			
+			li ul li {
+					display: block;
+					width: 100%;
+					background: $charcoal;
+					
+					&:first-child {
+						border-top: 1px solid $lime;
+					}
+					
+					
+					a {
+						display: block;
+						color: #fff;
+						font-size: 12px;
+						padding: 15px 20px;
+						
+						&:hover {color: #fff;}
+					}
+				
+				}
+		}
