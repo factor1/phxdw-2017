@@ -68,7 +68,7 @@
 
 		if( $query->have_posts() ):
 		?>
-		
+
 			<div class="row row--justify-content-start">
 				<h2 class="col-12  text-center">
 					M+M Speakers
@@ -76,8 +76,8 @@
 				<?php while( $query->have_posts() ): $query->the_post();?>
 					<div class="col-4 speakerthumb">
 						<a href="<?php the_permalink();?>">
-							<div class="profilepic glitch--hover">
-								<?php the_post_thumbnail('profile-picture'); ?>
+							<div class="profilepic glitch--hover" style="background: url('<?php echo the_post_thumbnail_url('profile-picture', 'full'); ?>') center center/cover">
+								<img src="<?php the_field('glitch_gif'); ?>" class="profile-glitch" />
 							</div>
 							<h4>
 								<?php the_title();?>
@@ -98,18 +98,18 @@
 
 			</div>
 		<?php endif; wp_reset_postdata();?>
-		
+
 		<div class="col-4 col-centered" style="display: none;">
 			<a href="http://phxdw.com/mm-program/" class="button" style="display:block; width:100%; margin-top:20px;">
 				<h3 class="" style="text-transform:capitalize; margin:15px">View the full program schedule <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
 			</a>
 		</div>
-		
+
 		</div>
 	</div>
 </section>
 
-<section class="container breakoutthumbgrid">		
+<section class="container breakoutthumbgrid">
 	<div class="row">
 		<div class="col-11 col-centered">
 		<?php
@@ -134,8 +134,8 @@
 				<?php while( $query->have_posts() ): $query->the_post();?>
 					<div class="col-2 speakerthumb">
 						<a href="<?php the_permalink();?>">
-							<div class="profilepic">
-								<?php the_post_thumbnail('profile-picture'); ?>
+							<div class="profilepic" style="background: url('<?php echo the_post_thumbnail_url('profile-picture', 'full'); ?>') center center/cover">
+								<img src="<?php the_field('glitch_gif'); ?>" class="profile-glitch" />
 							</div>
 							<h4>
 								<?php the_title();?>
@@ -151,17 +151,17 @@
 
 			</div>
 		<?php endif; wp_reset_postdata();?>
-		
+
 		<div class="col-11 col-centered" style="display: none;">
 			<a href="http://phxdw.com/mm-program/" class="button" style="display:block; width:100%; margin-top:20px;">
 				<h3 class="" style="text-transform:capitalize; margin:15px">View the full program schedule <i class="fa fa-chevron-right" aria-hidden="true"></i></h3>
 			</a>
 		</div>
-		
+
 		</div>
 	</div>
-</section>	
-		
+</section>
+
 
 
 
@@ -207,14 +207,14 @@
 				100 N. 3rd Street<br>
 				Phoenix, AZ 85004
 			</p>
-			
+
 			<p>
 				Main parking entrance is at 2nd and Monroe, southeast corner, enter on 2nd st</p>
 			<a href="http://dtphx.org/things-to-do/" class="button">
 				Learn About Downtown Phoenix
 			</a>
 		</div>
-		
+
 
 <?php
 //============ ** ============ //
@@ -266,7 +266,7 @@
 			</h2>
 
 			<p class=" text-center">
-				All two-day tickets include entrance to the Method + Madness Conference, PHXDW 2017 Kickoff Party, Method + Madness Evening Reception, and the PHXDW 2017 Closing Party. One-day M+M conference passes, group and AIGA discount opportunities are also available at the tickets link. 
+				All two-day tickets include entrance to the Method + Madness Conference, PHXDW 2017 Kickoff Party, Method + Madness Evening Reception, and the PHXDW 2017 Closing Party. One-day M+M conference passes, group and AIGA discount opportunities are also available at the tickets link.
 			</p>
 
 			<?php

@@ -3,36 +3,53 @@
 .speakerthumbgrid {
 	background: $charcoal-bg;
 	padding: 50px 0;
-	
+
 	h2 {color: #fff;}
 }
 .speakerthumb {
+	.profilepic:after {
+	  padding-top: 100%;
+	  /* 16:9 ratio */
+	  display: block;
+	  content: '';
+	}
+
+	.profile-glitch {
+		position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  right: 0;
+	  left: 0;
+		padding-left: .8rem;
+		padding-right: .8rem;
+	}
+
 	.profilepic img{
-		opacity: 0.55;
+		opacity: 0;
 		transition: $smooth;
 	}
-	
+
 	a {
 		color: $lime;
-		
+
 	}
-	
+
 	a:hover {
 		color: #fff;
 		.profilepic img {
-			opacity: 1
+			opacity: 1;
 			}
 	}
-	
+
 	h4 {
 		margin-bottom: 0px;
 	}
-	
+
 	p{
 		margin-top: 5px;
 	}
-	
-	
+
+
 }
 
 .breakoutthumbgrid .speakerthumb {
@@ -43,17 +60,17 @@
 .mmconf_hero {
 	background: $charcoal-bg;
 	color: #fff;
-	
+
 	.button {
 		color: #fff;
 		border-color: $lime;
 	}
-	
+
 }
 
 .conf-content {
 	padding: 100px 0;
-	
+
 }
 
 .tesimonial {
@@ -66,7 +83,7 @@
 .join-us {
 	background: $white-bg;
 	padding: 75px 0;
-	
+
 	.joincontent {
 		padding-right: 50px;
 	}
@@ -82,7 +99,7 @@
 	background-size: cover;
 	padding: 120px 0;
 	color: #fff;
-	
+
 	.button {
 		color: #fff;
 		border-color: $lime;
@@ -111,7 +128,7 @@
 #cd-timeline {
 	position: relative;
 	padding: 2em 0;
-	
+
 	margin: {
 		top: 2em;
 		bottom: 2em;
@@ -126,7 +143,7 @@
 		height: 100%;
 		width: 4px;
 		background: #ccc;
-		
+
 		@include max-screen($large) {
 			//Dump this shit on mobile
 			display:none;
@@ -140,7 +157,7 @@
 	position: relative;
 	margin: 2em 0;
 	@include clearfix;
-	
+
 
 	&:first-child {
 		margin-top: 0;
@@ -171,7 +188,7 @@
 	height: 10px;
 	border-radius: 50%;
 	background: #000;
-	
+
 	@include max-screen($large) {
 			//Dump this shit on mobile
 			display:none;
@@ -215,7 +232,7 @@
 	}
 
 	p, .cd-read-more, .cd-date {
-		
+
 	}
 
 	.cd-read-more, .cd-date {
@@ -256,39 +273,39 @@
 		width: 0;
 		border: 7px solid transparent;
 		border-right: 7px solid #333;
-		
+
 		@include max-screen($large) {
 			//Dump this shit on mobile
 			display:none;
 			}
 	}
-	
+
 	.cd-date {
 		@include max-screen($large) {
 			display: inline;
 			float: none;
-			
+
 			}
 
 	}
-	
-	
+
+
 	.breakout {
 		p {
 			margin: 0 0 5px;
 		}
-		
+
 		p.tag {
 			font-weight: bold
 		}
-		
+
 		.details {
 			padding-left: 15px;
 			border-top: 1px solid #ccc;
 		}
 	}
-	
-	
+
+
 
 	@include min-screen($medium) {
 		h2 {
@@ -352,7 +369,3 @@
 
 	}
 }
-
-
-
-
