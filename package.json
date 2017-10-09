@@ -25,6 +25,7 @@
   "dependencies": {
     "ginger-grid": "^2.0.3",
     "nifty-nav": "^3.0.0",
-    "prelude-wp": "^3.5.1"
+    "prelude-wp": "^3.5.1",
+    "remodal": "^1.1.1"
   }
 }

@@ -76,6 +76,13 @@
 			</div>
 			<?php endif;?>
 			
+			<?php if(get_field('talk_description')):?>
+			<div class="fun_questions">
+				<h3>Their Talk...</h3>
+				<?php the_field('talk_description');?>
+			</div>
+			<?php endif;?>
+			
 		</div>
 	</div>
 	
@@ -117,6 +124,14 @@
 			<div class="staffbio">
 				<?php the_field('staff_bio');?>
 			</div>
+			
+			<?php if(get_field('talk_description')):?>
+			<div class="fun_questions">
+				<hr>
+				<h3>Their Talk...</h3>
+				<?php the_field('talk_description');?>
+			</div>
+			<?php endif;?>
 
 			<div class="f1_mentor_details_social_container">
 			<h3 class="text-teal">Find them online</h3>
