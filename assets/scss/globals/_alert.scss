@@ -4,5 +4,16 @@
   position: fixed;
   z-index: 9999;
   top: 0;
-  width: 100%
+  width: 100%;
+  a {
+    margin: 0 0 0 rem(30);
+  }
+}
+
+.alert-message {
+  font-size:30px;
+  margin: 1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }

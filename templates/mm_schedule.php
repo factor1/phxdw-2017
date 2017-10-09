@@ -100,23 +100,48 @@
 				<span class="cd-date"><?php the_sub_field('time'); ?></span>
 				<?php the_sub_field('detail'); ?>
 
-				<?php if( have_rows('breakouts') ) : while( have_rows('breakouts') ): the_row();?>
-							<div class="breakout">
+				<?php if( have_rows('breakouts') ) : while( have_rows('breakouts') ): the_row();
+					// vars
+					$post_object = get_sub_field('speaker');
+					$post_id = get_sub_field('id');
+					$talk_title = get_sub_field('talk_title');
 
+					if( $post_object ):
+
+						// override $post
+						$post = $post_object;
+						setup_postdata( $post );
+
+						$post_id = get_the_ID($post->ID);
+				?>
+
+							<div class="breakout">
 								<p class="tag"><?php the_sub_field('tag'); ?></p>
 								<div class="details">
 									<p class="room"><?php the_sub_field('room'); ?></p>
-									<p class="speaker"><?php the_sub_field('speaker'); ?><span>&nbsp;
-										<?php the_sub_field('company'); ?></span></p>
-									<p class="title"><a href="#<?php the_sub_field('id'); ?>"><?php the_sub_field('talk_title'); ?></a></p>
-									<div class="remodal" data-remodal-id="<?php the_sub_field('id'); ?>">
-									  <button data-remodal-action="close" class="remodal-close"></button>
-									  <h1>Remodal</h1>
-									 	<?php the_sub_field('details'); ?>
-									</div>
+									<p class="speaker"><?php the_title(); ?></p>
+									<p class="speaker-title"><?php the_field('title'); ?></p>
+									<p class="title">
+										<?php if($post_id) : ?><a href="#<?php echo $post_id; ?>"><?php endif; ?>
+											<?php echo $talk_title; ?>
+										<?php if($post_id) : ?></a><?php endif; ?>
+									</p>
+									<?php if($post_id) :?>
+										<div class="remodal" data-remodal-id="<?php echo $post_id; ?>">
+											<?php if($post_object->glitch_gif) : ?>
+												<img src="<?php the_field('glitch_gif'); ?>" alt="Speaker Image"/>
+											<?php endif; ?>
+										  <button data-remodal-action="close" class="remodal-close"></button>
+										  <h2><?php echo $talk_title; ?></h2>
+											<h3 class="speaker"><?php the_title(); ?></h3>
+											<p class="speaker-title"><?php the_field('title'); ?></p>
+										 	<?php the_field('talk_description'); ?>
+										</div>
+									<?php endif; ?>
 								</div>
 							</div>
-						<?php endwhile; endif; ?>
+						<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+					<?php endif; endwhile; endif; ?>
 				<!--<a href="#0" class="cd-read-more">Read more</a> -->
 
 			</div> <!-- cd-timeline-content -->
