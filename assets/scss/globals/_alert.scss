@@ -4,5 +4,8 @@
   position: fixed;
   z-index: 9999;
   top: 0;
-  width: 100%
+  width: 100%;
+  a {
+    margin: 0 rem(20);
+  }
 }
