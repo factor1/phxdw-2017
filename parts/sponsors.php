@@ -69,7 +69,7 @@ Agency Sponsor
           </div>
         <?php endwhile;?>
       </div>
-    </div>
+
     
       <?php // Premier Sponsors ?>
       <div class="col-6 text-center">
@@ -86,7 +86,7 @@ Agency Sponsor
         <?php endwhile;?>
       </div>
 
-    
+    </div>
 
 
     
@@ -230,21 +230,22 @@ Agency Sponsor
     
     
 
+
     
     
-     <?php // Other Sponors ?>
+     <?php // Community  Sponsors ?>
     
-    <?php if(have_rows('other_sponsorsXX', 'option')):?>
+    <?php if(have_rows('community_sponsors', 'option')):?>
     <div class="row">
       <div class="col-12 text-center">
         <h4 class="sponsors--headline">
-           Other Sponsors
+           Community Sponsors
         </h4>
       </div>
     </div>
     
       <div class="row row--justify-content-center">
-        <?php while(have_rows('other_sponsors', 'option')): the_row();?>
+        <?php while(have_rows('community_sponsors', 'option')): the_row();?>
           <div class="col-3 text-center sponsors--grid-item">
             <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
               <img src="<?php the_sub_field('sponsor_image');?>" alt="Sponsor Image">
@@ -255,50 +256,7 @@ Agency Sponsor
     <?php endif;?>
     
     
-     <?php // Student  Sponsors ?>
-    
-    <?php if(have_rows('student_sponsors', 'option')):?>
-    <div class="row">
-      <div class="col-12 text-center">
-        <h4 class="sponsors--headline">
-           Student Scholarship Sponsors
-        </h4>
-      </div>
-    </div>
-    
-      <div class="row row--justify-content-center">
-        <?php while(have_rows('student_sponsors', 'option')): the_row();?>
-          <div class="col-3 text-center sponsors--grid-item">
-            <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
-              <img src="<?php the_sub_field('sponsor_image');?>" alt="Sponsor Image">
-            </a>
-          </div>
-        <?php endwhile;?>
-      </div>
-    <?php endif;?>
-    
-    
-        <?php // Partner Organization / Sponsors ?>
-    
-    <?php if(have_rows('partner_sponsorsXX', 'option')):?>
-    <div class="row">
-      <div class="col-12 text-center">
-        <h4 class="sponsors--headline">
-           Partner Organizations Who Helped Organize This Event
-        </h4>
-      </div>
-    </div>
-    
-      <div class="row row--justify-content-center">
-        <?php while(have_rows('partner_sponsors', 'option')): the_row();?>
-          <div class="col-3 text-center sponsors--grid-item">
-            <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
-              <img src="<?php the_sub_field('sponsor_image');?>" alt="Sponsor Image">
-            </a>
-          </div>
-        <?php endwhile;?>
-      </div>
-    <?php endif;?>
+
     
     
 
