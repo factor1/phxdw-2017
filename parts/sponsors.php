@@ -2,7 +2,7 @@
 Title Sponsor - Limit 1
 Premier Sponsor - Limit 5
 Premier Print and Large Format Sponsor - Limit 5
-Leadership Sponsor 
+Leadership Sponsor
 Industry Sponsor
 Agency Sponsor
 -->
@@ -25,13 +25,13 @@ Agency Sponsor
 
 
 
-    <?php // Title Sponsors 
-	    
+    <?php // Title Sponsors
+
 	    // Do we even have this as an option anymore?
-	    
+
     ?>
     <?php if(have_rows('title_sponsors', 'option')):?>
-    
+
     <div class="row">
       <div class="col-12 text-center">
         <h4 class="sponsors--headline">
@@ -39,7 +39,7 @@ Agency Sponsor
         </h4>
       </div>
     </div>
-    
+
       <div class="row row--justify-content-center">
         <?php while(have_rows('title_sponsors', 'option')): the_row();?>
           <div class="col-3 text-center sponsors--grid-item">
@@ -49,12 +49,12 @@ Agency Sponsor
           </div>
         <?php endwhile;?>
       </div>
-      
+
     <?php endif;?>
 
 
 
-    
+
     <div class="row">
 	<?php // Print Sponsors ?>
       <div class="col-6 text-center">
@@ -70,13 +70,13 @@ Agency Sponsor
         <?php endwhile;?>
       </div>
 
-    
+
       <?php // Premier Sponsors ?>
       <div class="col-6 text-center">
         <h4 class="sponsors--headline">
           Premier Sponsors
         </h4>
-        
+
         <?php while(have_rows('premier_sponsors', 'option')): the_row();?>
           <div class="text-center sponsors--grid-item">
             <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
@@ -89,9 +89,9 @@ Agency Sponsor
     </div>
 
 
-    
-    
-    
+
+
+
     <?php // Agency Sponsors ?>
     <?php if(have_rows('agency_sponsors', 'option')):?>
     <div class="row">
@@ -101,8 +101,8 @@ Agency Sponsor
         </h4>
       </div>
     </div>
-    
-      <div class="row row--justify-content-center">
+
+      <div class="row row--justify-content-center row--align-items-center">
         <?php while(have_rows('agency_sponsors', 'option')): the_row();?>
           <div class="col-3 text-center sponsors--grid-item">
             <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
@@ -112,7 +112,7 @@ Agency Sponsor
         <?php endwhile;?>
       </div>
     <?php endif;?>
-    
+
 
 
     <?php // Leadership Sponsors ?>
@@ -124,8 +124,8 @@ Agency Sponsor
         </h4>
       </div>
     </div>
-    
-      <div class="row row--justify-content-center">
+
+      <div class="row row--justify-content-center row--align-items-center">
         <?php while(have_rows('leadership_sponsors', 'option')): the_row();?>
           <div class="col-3 text-center sponsors--grid-item">
             <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
@@ -135,8 +135,8 @@ Agency Sponsor
         <?php endwhile;?>
       </div>
     <?php endif;?>
-    
-    
+
+
 
     <?php // Breakout Sponsors ?>
     <?php if(have_rows('breakout_sponsors', 'option')):?>
@@ -147,8 +147,8 @@ Agency Sponsor
         </h4>
       </div>
     </div>
-    
-      <div class="row row--justify-content-center">
+
+      <div class="row row--justify-content-center row--align-items-center">
         <?php while(have_rows('breakout_sponsors', 'option')): the_row();?>
           <div class="col-3 text-center sponsors--grid-item">
             <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
@@ -169,8 +169,8 @@ Agency Sponsor
         </h4>
       </div>
     </div>
-    
-      <div class="row row--justify-content-center">
+
+      <div class="row row--justify-content-center row--align-items-center">
         <?php while(have_rows('industry_sponsors', 'option')): the_row();?>
           <div class="col-3 text-center sponsors--grid-item">
             <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
@@ -180,10 +180,10 @@ Agency Sponsor
         <?php endwhile;?>
       </div>
     <?php endif;?>
-    
-    
-    
-    
+
+
+
+
     <?php // Agency Sponsors ?>
     <?php if(have_rows('partner_sponsors', 'option')):?>
     <div class="row">
@@ -193,8 +193,8 @@ Agency Sponsor
         </h4>
       </div>
     </div>
-    
-      <div class="row row--justify-content-center">
+
+      <div class="row row--justify-content-center row--align-items-center">
         <?php while(have_rows('partner_sponsors', 'option')): the_row();?>
           <div class="col-3 text-center sponsors--grid-item">
             <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
@@ -204,9 +204,9 @@ Agency Sponsor
         <?php endwhile;?>
       </div>
     <?php endif;?>
-    
-    
-    
+
+
+
         <?php // Agency Sponsors ?>
     <?php if(have_rows('inkind_sponsors', 'option')):?>
     <div class="row">
@@ -216,8 +216,8 @@ Agency Sponsor
         </h4>
       </div>
     </div>
-    
-      <div class="row row--justify-content-center">
+
+      <div class="row row--justify-content-center row--align-items-center">
         <?php while(have_rows('inkind_sponsors', 'option')): the_row();?>
           <div class="col-3 text-center sponsors--grid-item">
             <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
@@ -227,24 +227,24 @@ Agency Sponsor
         <?php endwhile;?>
       </div>
     <?php endif;?>
-    
-    
 
 
-    
-    
+
+
+
+
      <?php // Community  Sponsors ?>
-    
+
     <?php if(have_rows('community_sponsors', 'option')):?>
     <div class="row">
       <div class="col-12 text-center">
         <h4 class="sponsors--headline">
-           Community Sponsors
+           COMMUNITY PARTNERS
         </h4>
       </div>
     </div>
-    
-      <div class="row row--justify-content-center">
+
+      <div class="row row--justify-content-center row--align-items-center">
         <?php while(have_rows('community_sponsors', 'option')): the_row();?>
           <div class="col-3 text-center sponsors--grid-item">
             <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
@@ -254,11 +254,11 @@ Agency Sponsor
         <?php endwhile;?>
       </div>
     <?php endif;?>
-    
-    
 
-    
-    
+
+
+
+
 
   </div>
 </section>
