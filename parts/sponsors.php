@@ -56,6 +56,21 @@ Agency Sponsor
 
     
     <div class="row">
+	<?php // Print Sponsors ?>
+      <div class="col-6 text-center">
+        <h4 class="sponsors--headline">
+          Premier Print And Large Format Sponsor
+        </h4>
+        <?php while(have_rows('print_sponsors', 'option')): the_row();?>
+          <div class="text-center sponsors--grid-item">
+            <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
+              <img src="<?php the_sub_field('sponsor_image');?>" alt="Sponsor Image">
+            </a>
+          </div>
+        <?php endwhile;?>
+      </div>
+    </div>
+    
       <?php // Premier Sponsors ?>
       <div class="col-6 text-center">
         <h4 class="sponsors--headline">
@@ -72,20 +87,7 @@ Agency Sponsor
       </div>
 
     
-    <?php // Print Sponsors ?>
-      <div class="col-6 text-center">
-        <h4 class="sponsors--headline">
-          Premier Print And Large Format Sponsor
-        </h4>
-        <?php while(have_rows('print_sponsors', 'option')): the_row();?>
-          <div class="text-center sponsors--grid-item">
-            <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
-              <img src="<?php the_sub_field('sponsor_image');?>" alt="Sponsor Image">
-            </a>
-          </div>
-        <?php endwhile;?>
-      </div>
-    </div>
+
 
     
     
