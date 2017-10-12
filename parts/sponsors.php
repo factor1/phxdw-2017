@@ -69,7 +69,7 @@ Agency Sponsor
           </div>
         <?php endwhile;?>
       </div>
-    </div>
+
     
       <?php // Premier Sponsors ?>
       <div class="col-6 text-center">
@@ -86,7 +86,7 @@ Agency Sponsor
         <?php endwhile;?>
       </div>
 
-    
+    </div>
 
 
     
