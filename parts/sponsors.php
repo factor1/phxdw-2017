@@ -35,7 +35,7 @@ Agency Sponsor
     <div class="row">
       <div class="col-12 text-center">
         <h4 class="sponsors--headline">
-          Title Sponsors
+          TITLE SPONSOR
         </h4>
       </div>
     </div>
@@ -59,7 +59,7 @@ Agency Sponsor
 	<?php // Print Sponsors ?>
       <div class="col-6 text-center">
         <h4 class="sponsors--headline">
-          Premier Print And Large Format Sponsor
+          PREMIER PRINT AND LARGE FORMAT SPONSOR
         </h4>
         <?php while(have_rows('print_sponsors', 'option')): the_row();?>
           <div class="text-center sponsors--grid-item">
@@ -74,7 +74,7 @@ Agency Sponsor
       <?php // Premier Sponsors ?>
       <div class="col-6 text-center">
         <h4 class="sponsors--headline">
-          Premier Sponsors
+          PREMIER SPONSORS
         </h4>
 
         <?php while(have_rows('premier_sponsors', 'option')): the_row();?>
@@ -97,7 +97,7 @@ Agency Sponsor
     <div class="row">
       <div class="col-12 text-center">
         <h4 class="sponsors--headline">
-          Premier PHXDW Partners
+          PREMIER PHXDW PARTNERS
         </h4>
       </div>
     </div>
@@ -212,7 +212,7 @@ Agency Sponsor
     <div class="row">
       <div class="col-12 text-center">
         <h4 class="sponsors--headline">
-          PHXDW IN-KIND SPONSOR
+          PHXDW SPONSOR
         </h4>
       </div>
     </div>
@@ -254,8 +254,29 @@ Agency Sponsor
         <?php endwhile;?>
       </div>
     <?php endif;?>
+    
+    
 
+	 <?php // Student Sponsors ?>
+    <?php if(have_rows('student_sponsors', 'option')):?>
+    <div class="row">
+      <div class="col-12 text-center">
+        <h4 class="sponsors--headline">
+          PHXDW STUDENT SCHOLARSHIP SPONSORS
+        </h4>
+      </div>
+    </div>
 
+      <div class="row row--justify-content-center row--align-items-center" style="margin-bottom:40px;">
+        <?php while(have_rows('student_sponsors', 'option')): the_row();?>
+          <div class="col-3 text-center sponsors--grid-item">
+            <a href="<?php the_sub_field('sponsor_link');?>" target="_blank">
+              <img src="<?php the_sub_field('sponsor_image');?>" alt="Sponsor Image">
+            </a>
+          </div>
+        <?php endwhile;?>
+      </div>
+    <?php endif;?>
 
 
 
