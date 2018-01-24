@@ -39,7 +39,7 @@
 
   <?php get_template_part('parts/alert'); ?>
 
-	<header class="container">
+	<header class="container" style="z-index:9999;">
 	  	<div class="row">
 
 <?php if(is_page_template('templates/home.php')) { ?>
@@ -66,7 +66,7 @@ else {
 			  <h1><a href="<?php bloginfo( 'home' ); ?>">PHX Design Week 2017</a></h1>
 		  </div>
 		  <div class="col-9 md-hide-down">
-			  <a href="https://phxdwmethodmadness2017.eventbrite.com/" class="button header--buynow">Get Tickets</a>
+			  <a href="https://phxdwmethodmadness2017.eventbrite.com/" class="button header--buynow">Get M+M Tickets</a>
 			  <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>2, 'container_id' => 'interior-menu')); ?>
 		  </div>
 
@@ -82,7 +82,7 @@ else {
   <div class="container">
     <div class="row">
       <div class="col-12 text-right" style="padding: 0;">
-          <a href="https://phxdwmethodmadness2017.eventbrite.com/" class="button header--buynow">Get Tickets</a>
+          <a href="https://phxdwmethodmadness2017.eventbrite.com/" class="button header--buynow">Get M+M Tickets</a>
         <?php wp_nav_menu(array ('menu' => 'primary', 'depth'=>2)); ?>
       </div>
     </div>
