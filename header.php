@@ -39,7 +39,7 @@
 
   <?php get_template_part('parts/alert'); ?>
 
-	<header class="container">
+	<header class="container" style="z-index:9999;">
 	  	<div class="row">
 
 <?php if(is_page_template('templates/home.php')) { ?>
